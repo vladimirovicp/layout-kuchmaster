@@ -1,20 +1,37 @@
 .header{
 
-  background: red;
+  //background: red;
 
   .container{
     height: 5rem;
     //background: gray;
     display: flex;
+
+
   }
 
   &__item{
-    //flex: 1 1 0;
     flex-grow: 1;
     display: flex;
     align-items: center;
-    &_center{
+
+    &:nth-child(2){
       justify-content: center;
+    }
+    &:nth-child(3){
+      justify-content: flex-end;
+    }
+
+  }
+
+  &__contacts{
+    display: flex;
+    padding:0;
+    &_item{
+      margin-right: 3.5rem;
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
 

@@ -1,0 +1,9 @@
+.menu{
+  height: 8rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset .0314rem .5992rem .7rem 0 rgba(0, 0, 0, 0.1);
+
+  &__list{
+    display: flex;
+  }
+}
