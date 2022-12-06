@@ -9,16 +9,21 @@
 }
 
 html {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.52vw;  //на разрешении 1920 0.52vw === 10px
+    //font-family: 'Open Sans', sans-serif;
+    //font-size: 0.52vw;  //на разрешении 1920 0.52vw === 10px
     //font-size: 0.74vw;
 
     //на разрешении 1350 0.74vw === 10px
     //10/(1350/100)
     //10/1920/100)
+    //10/1440/100 -> 0,694(4)
+    //font-size: 0.5208vw;
 
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
+    font-size:0.694vw;
+
     -webkit-animation: bugfix infinite 1s;
     line-height: 1.2;
     margin: 0;
@@ -125,7 +130,7 @@ input[type="number"] {
 }
 
 .container {
-    width: 135rem;
+    width: 144rem;
     margin: 0 auto;
 }
 
@@ -154,5 +159,13 @@ input[type="number"] {
 }
 
 @media (min-width: 48em) {
+
+}
+
+@media (min-width: 90em) { //1440
+
+    html {
+        font-size:10px;
+    }
 
 }
