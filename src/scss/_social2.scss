@@ -2,6 +2,7 @@
 
 .social2{
   display: inline-flex;
+  padding: 0;
 
   &__link{
       position: relative;
@@ -17,16 +18,13 @@
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
       transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       &:hover {
-        //background-color: #7360F2;
         .social2__tooltip {
-          //background-color: #7360F2;
           top: -4.5rem;
           opacity: 1;
           visibility: visible;
           pointer-events: auto;
           text-shadow: 0 -.1rem 0 rgba(0, 0, 0, 0.1);
           &:before {
-            //background-color: #7360F2;
             color: #ffffff;
           }
         }
@@ -79,12 +77,6 @@
         }
       }
     }
-
-
-
-
-
-
   }
 
   &__tooltip {
@@ -98,6 +90,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-size: 1.4rem;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -127,8 +120,4 @@
       transition: fill .5s;
     }
   }
-
-
-  //
-
 }
