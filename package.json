@@ -9,6 +9,8 @@
     "magnific-popup": "^1.1.0",
     "mini-css-extract-plugin": "^2.6.1",
     "normalize.css": "^8.0.1",
+    "spelling": "^2.0.2",
+    "splitting": "^1.0.6",
     "swiper": "^8.4.4"
   },
   "devDependencies": {
