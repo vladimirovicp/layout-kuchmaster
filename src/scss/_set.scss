@@ -130,7 +130,8 @@ input[type="number"] {
 }
 
 .container {
-    width: 144rem;
+    //width: 144rem;
+    width: 134rem;
     margin: 0 auto;
 }
 
@@ -164,8 +165,12 @@ input[type="number"] {
 
 @media (min-width: 90em) { //1440
 
+}
+
+@media (min-width: 1000em) { //1600
+
     html {
         font-size:10px;
     }
-
 }
+

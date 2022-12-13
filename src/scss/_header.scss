@@ -1,7 +1,12 @@
 .header{
+
   .container{
     height: 5rem;
     display: flex;
+  }
+
+  &__top{
+    padding: 1rem 0;
   }
 
   &__item{
