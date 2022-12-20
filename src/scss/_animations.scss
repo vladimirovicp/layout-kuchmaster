@@ -1,0 +1,48 @@
+.anima-text-left{
+  display: block;
+  animation-name: leftToRight;
+  animation-duration: 1.7s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+
+.anima-text-right{
+  display: block;
+  animation-name: rightToLeft;
+  animation-duration: 1.7s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+
+
+@keyframes leftToRight{
+  0%{
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80%{
+    transform: translate(2rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightToLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80%{
+    transform: translate(-1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

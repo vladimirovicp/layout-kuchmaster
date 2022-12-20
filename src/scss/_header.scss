@@ -43,6 +43,16 @@
 
   &__slogan{
     font-size: 1.8rem;
+    font-family: 'Merriweather',sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #16213F;
+
+
   }
 }
 
