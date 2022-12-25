@@ -1,0 +1,14 @@
+.about{
+  padding: 5rem 0;
+  &__img{
+    width: 50rem;
+    height: 31rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-right: 4rem;
+  }
+
+  &__footer{
+    text-align: right;
+  }
+}
