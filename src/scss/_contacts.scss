@@ -11,11 +11,11 @@
     align-items: center;
     &:hover{
       .contacts__text{
-        color: #a96700;
+        color: $color1;
       }
       .contacts__ico{
         svg{
-          fill: #a96700;
+          fill: $color1;
         }
       }
     }

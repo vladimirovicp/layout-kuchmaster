@@ -5,7 +5,25 @@
     line-height: 1.5;
     margin-bottom: 2rem;
     text-align: center;
-    color: #a96700;
+    //color: #a96700;
+    //color: $color1;
+    span{
+      position: relative;
+
+      &::after{
+        content: '';
+        height: 0.5rem;
+        background-color: #da3939;
+        position: absolute;
+        bottom: -0.25rem;
+        width: 50%;
+        right: -.5rem;
+      }
+    }
+
+
+
+
   }
 
 

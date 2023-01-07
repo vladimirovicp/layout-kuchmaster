@@ -30,7 +30,8 @@
       color: #fff;
       //color: #000;
       //background-color: rgba(255, 255, 255, 0.5);
-      background-color: #a96700;
+      //background-color: #a96700;
+      background-color: $color2;
       font-size: 3.5em;
       font-weight: bold;
       padding: 2rem;
@@ -62,7 +63,6 @@
       font-size: 2em;
       padding: 1em;
       color: white;
-      /*text-align: center;*/
       background-color: rgba(0, 0, 0, 0.5);
       overflow: hidden;
       transform: translateX(105%);
@@ -90,7 +90,11 @@
 .swiper{
   &-button{
     &-next, &-prev{
-      color: #a96700;
+      color: $color1;
+      transition: color .5s;
+      &:hover{
+        color: $color2;
+      }
     }
   }
 }

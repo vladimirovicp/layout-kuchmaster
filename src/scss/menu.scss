@@ -2,14 +2,9 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   box-shadow: inset .03rem .6rem .7rem 0 rgba(0, 0, 0, 0.1);
-  //height: 8rem;
   background-color: #eaeaea;
 
   .container{
-    //display: flex;
-    //align-items: center;
-    //justify-content: center;
-
     height: 100%;
   }
 
@@ -24,10 +19,9 @@
   }
 
   .social2{
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-   // margin-left: auto;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__list{
@@ -41,9 +35,6 @@
     margin: 0;
     height: 4rem;
     padding: 1rem;
-    //&:not(:first-child){
-    //  margin-left: 1rem;
-    //}
   }
 
   &__link{
@@ -55,14 +46,14 @@
     &:after{
       position: relative;
       content: '';
-      background-color: #a96700;
+      background-color: $color1;
       transition: width  0.3s, left 0.3s;
       width: 0;
       left: 50%;
     }
 
     &._active{
-      color: #a96700;
+      color: $color1;
       &:after{
         height: 2px;
         bottom: -4px;
@@ -73,7 +64,7 @@
     }
 
     &:hover{
-      color: #a96700;
+      color: $color1;
       &:after{
         height: 2px;
         bottom: -4px;
