@@ -27,6 +27,7 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
+   // margin-left: auto;
   }
 
   &__list{
@@ -36,7 +37,13 @@
   }
 
   &__item{
+    list-style: none;
+    margin: 0;
+    height: 4rem;
     padding: 1rem;
+    //&:not(:first-child){
+    //  margin-left: 1rem;
+    //}
   }
 
   &__link{

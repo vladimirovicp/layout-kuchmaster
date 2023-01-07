@@ -1,5 +1,6 @@
 .contacts{
   &__item{
+    list-style: none;
     &:not(:last-child){
       margin-right: 2rem;
     }

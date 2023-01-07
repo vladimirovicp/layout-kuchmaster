@@ -4,6 +4,11 @@
   display: inline-flex;
   padding: 0;
 
+ &__item{
+   list-style: none;
+   margin-left: 0.5rem;
+ }
+
   &__link{
       position: relative;
       border-radius: 50%;
@@ -74,6 +79,18 @@
           background-color: #3390ec;
           &:before {
             background-color: #3390ec;
+          }
+        }
+      }
+    }
+
+    &.ok{
+      &:hover {
+        background-color: #ed812b;
+        .social2__tooltip {
+          background-color: #ed812b;
+          &:before {
+            background-color: #ed812b;
           }
         }
       }
