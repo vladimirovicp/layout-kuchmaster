@@ -13,17 +13,13 @@
       &::after{
         content: '';
         height: 0.5rem;
-        background-color: #da3939;
+        background-color: $color1;
         position: absolute;
         bottom: -0.25rem;
         width: 50%;
         right: -.5rem;
       }
     }
-
-
-
-
   }
 
 

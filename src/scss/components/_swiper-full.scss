@@ -31,7 +31,7 @@
       //color: #000;
       //background-color: rgba(255, 255, 255, 0.5);
       //background-color: #a96700;
-      background-color: $color2;
+      background-color: $color1;
       font-size: 3.5em;
       font-weight: bold;
       padding: 2rem;
@@ -39,6 +39,7 @@
       transform: translateX(-105%);
       transition: transform 0.3s ease-out 0.3s;
       z-index: 1;
+      border-radius: 0 0.3rem 0.3rem 0;
       &:before{
         content: '';
         position: absolute;
@@ -62,11 +63,15 @@
       max-width: 75%;
       font-size: 2em;
       padding: 1em;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.5);
+      color: #000;
+      //background-color: rgba(0, 0, 0, 0.5);
+      //background-color: #F4E7E7;
+      background-color: rgba(205, 193, 193, 0.5);
+
       overflow: hidden;
       transform: translateX(105%);
       transition: transform 0.3s ease-out .3s;
+      border-radius: .3rem 0 0 0;
       &:before{
         content: '';
         position: absolute;
