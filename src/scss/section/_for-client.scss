@@ -1,0 +1,33 @@
+.for-client{
+  padding: 8rem 0;
+  background-color: #FFF6F6;
+  &__img{
+    width: 15.8rem;
+    height: 18rem;
+    border-radius: 18rem;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  &__text{
+    width: 54rem;
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+
+  &__person{
+    width: 21.8rem;
+    text-align: center;
+    &-name{
+      font-weight: 600;
+      font-size: 1.8rem;
+      padding-bottom: 1rem;
+    }
+    &-description{
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+  }
+}

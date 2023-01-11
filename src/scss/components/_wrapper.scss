@@ -1,6 +1,12 @@
 .wrapper{
   display: flex;
 
+  &_center{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
   &__1-2{
     width: 50%;
   }
