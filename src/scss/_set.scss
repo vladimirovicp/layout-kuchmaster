@@ -182,7 +182,9 @@ ul li {
 }
 
 @media (min-width: 90em) { //1440
-
+    html {
+        font-size:10px;
+    }
 }
 
 @media (min-width: 1000em) { //1600

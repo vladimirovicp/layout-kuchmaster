@@ -1,3 +1,25 @@
+.anima-line-top{
+  position: relative;
+  &:before{
+    content: '';
+    width: .4rem;
+    height: 100%;
+    position: absolute;
+    background-color: $color1;
+    left: -1rem;
+
+
+
+    animation-name: lineTopToBottom;
+    animation-duration: 1.7s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    backface-visibility: hidden;
+    animation-fill-mode: backwards;
+  }
+
+}
+
 .anima-text-left{
   display: block;
   animation-name: leftToRight;
@@ -44,5 +66,19 @@
   100%{
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes lineTopToBottom{
+  0%{
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  80%{
+    transform: translate(-1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
   }
 }
