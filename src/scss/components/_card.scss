@@ -9,14 +9,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 6rem 16rem;
+  //gap: 6rem 16rem;
+  gap: 4rem;
 }
 
 .card2{
-  width: 25rem;
+  width: 42rem;
+  border: .5rem solid $color4;
+  padding: 3.5rem;
+  border-radius: .4rem;
+  background-color: $color3;
   &__img{
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     img{
       width: 7.5rem;
     }
@@ -26,5 +31,7 @@
     text-align: center;
     font-style: italic;
     font-weight: 400;
+    width: 24rem;
+    margin: 0 auto;
   }
 }

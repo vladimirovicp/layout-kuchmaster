@@ -27,13 +27,17 @@
     svg{
       width: 2rem;
       height: 2rem;
-      fill: #000;
+      fill: $color2;
       transition: fill .5s;
     }
   }
 
   &__text{
-    color: #000;
+    color: $color2;
     transition: color .5s;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 132%;
+
   }
 }

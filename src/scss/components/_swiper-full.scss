@@ -1,19 +1,19 @@
 .swiper-full{
   position: relative;
-  height: calc( 100vh - 15rem );
-  &:before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    top: 0;
-    z-index: 10;
-    display: block;
-    background: linear-gradient(180deg, #eaeaea 7%, rgba(234, 234, 234, 0.68) 67.84%, rgba(255, 255, 255, 0) 100%);
-  }
-  img{
-    opacity: 0.5;
-  }
+  height: calc( 100vh - 18rem );
+  //&:before{
+  //  content: '';
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 50px;
+  //  top: 0;
+  //  z-index: 10;
+  //  display: block;
+  //  background: linear-gradient(180deg, #eaeaea 7%, rgba(234, 234, 234, 0.68) 67.84%, rgba(255, 255, 255, 0) 100%);
+  //}
+  //img{
+  //  opacity: 0.5;
+  //}
 
   &__slide{
     position: relative;
@@ -26,7 +26,7 @@
     overflow: hidden;
     &_head{
       position: absolute;
-      top: 4rem;
+      top: 14rem;
       color: #fff;
       //color: #000;
       //background-color: rgba(255, 255, 255, 0.5);
@@ -34,7 +34,7 @@
       background-color: $color1;
       font-size: 3.5em;
       font-weight: bold;
-      padding: 2rem;
+      padding: 1.2rem;
       overflow: hidden;
       transform: translateX(-105%);
       transition: transform 0.3s ease-out 0.3s;
