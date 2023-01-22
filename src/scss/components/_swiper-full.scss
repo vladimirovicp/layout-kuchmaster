@@ -1,23 +1,11 @@
 .swiper-full{
   position: relative;
   height: calc( 100vh - 18rem );
-  //&:before{
-  //  content: '';
-  //  position: absolute;
-  //  width: 100%;
-  //  height: 50px;
-  //  top: 0;
-  //  z-index: 10;
-  //  display: block;
-  //  background: linear-gradient(180deg, #eaeaea 7%, rgba(234, 234, 234, 0.68) 67.84%, rgba(255, 255, 255, 0) 100%);
-  //}
-  //img{
-  //  opacity: 0.5;
-  //}
 
   &__slide{
     position: relative;
   }
+
 
   &__text{
     position: absolute;
@@ -28,9 +16,6 @@
       position: absolute;
       top: 14rem;
       color: #fff;
-      //color: #000;
-      //background-color: rgba(255, 255, 255, 0.5);
-      //background-color: #a96700;
       background-color: $color1;
       font-size: 3.5em;
       font-weight: bold;
@@ -47,8 +32,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-       //background-color: black;
-        //background-color: rgba(255, 255, 255, 0.5);
         background-color: white;
         transform: translateX(0);
         transition: transform 0.3s ease-out .55s;
@@ -64,8 +47,6 @@
       font-size: 2em;
       padding: 1em;
       color: #000;
-      //background-color: rgba(0, 0, 0, 0.5);
-      //background-color: #F4E7E7;
       background-color: rgba(205, 193, 193, 0.5);
 
       overflow: hidden;
@@ -86,23 +67,10 @@
     }
 
   }
-
-
 }
 
 
 
-.swiper{
-  &-button{
-    &-next, &-prev{
-      color: $color1;
-      transition: color .5s;
-      &:hover{
-        color: $color2;
-      }
-    }
-  }
-}
 
 .swiper-slide-active{
   .swiper-full__text{

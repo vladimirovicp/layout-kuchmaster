@@ -1,0 +1,21 @@
+.swiper{
+  &-button{
+    &-next, &-prev{
+      color: $color1;
+      transition: color .5s;
+      &:hover{
+        color: $color2;
+      }
+    }
+    &-disabled{
+      svg{
+        opacity: .35;
+      }
+      &:hover{
+        svg{
+          stroke: $color1;
+        }
+      }
+    }
+  }
+}

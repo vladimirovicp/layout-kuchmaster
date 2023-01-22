@@ -2,26 +2,27 @@
 
 
 @import "abstracts/variable";
+@import "abstracts/mixins";
 
-@import "mixins";
+//@import "mixins";
 @import "vendor";
 @import "set";
 @import "social";
 @import "social2";
-
 @import "animations";
-
 @import "contacts";
-
 @import "header";
 @import "menu";
 
 
-
+@import "components/swiper";
 @import "components/swiper-full";
+
+
 @import "components/card";
 @import "components/wrapper";
 @import "components/title";
+@import "components/direction-aware";  //Direction-aware hover effect - Эффект зависания с учетом направления
 
 @import "section/hero";
 @import "section/hero2";
