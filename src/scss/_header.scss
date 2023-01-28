@@ -1,12 +1,14 @@
 .header{
+  position: relative;
 
   .container{
-    height: 9rem;
     display: flex;
   }
 
   &__top{
     padding: 1rem 0;
+    position: relative;
+    z-index: 20;
   }
 
   &__item{
@@ -30,7 +32,6 @@
 
   &__site{
     display: flex;
-    margin-right: 11.5rem;
     &-logo{
       width: 6.6rem;
       height: 6.6rem;
@@ -56,34 +57,54 @@
 
 
   &__slogan{
-    //font-size: 1.8rem;
-    //font-family: 'Merriweather',sans-serif;
-    //font-style: italic;
-   // font-weight: 700;
-    //line-height: 150%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     font-feature-settings: 'salt' on, 'liga' off;
-    //color: #16213F;
     color: #360405;
-
-    //font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 132%;
     padding-left: 1rem;
-   // border-left: .4rem solid $color1;
-
-
   }
 }
 
-//.telegram{
-//  svg{
-//    fill: transparent;
-//    stroke: #000;
-//  }
-//}
+
+@media (max-width: 48em) {
+  .header{
+    //.container{
+    //  height: 12rem;
+    //}
+
+    &__top{
+      background-color: $color6;
+    }
+    &__item{
+      width: 100%;
+      justify-content: center;
+    }
+    &__site-logo{
+      width: 9rem;
+      height: 9rem;
+
+      img{
+        width: 4.9rem;
+        height: 7.5rem;
+      }
+    }
+    &__site-name{
+      font-size: 4.8rem;
+      padding-left: 2.4rem;
+    }
+  }
+}
+
+@media (min-width: 48em) {
+  .header{
+    &__site {
+      margin-right: 11.5rem;
+    }
+  }
+}
 
 

@@ -4,6 +4,8 @@
 @import "abstracts/variable";
 @import "abstracts/mixins";
 
+@import "global";
+
 //@import "mixins";
 @import "vendor";
 @import "set";
@@ -24,8 +26,8 @@
 @import "components/title";
 @import "components/direction-aware";  //Direction-aware hover effect - Эффект зависания с учетом направления
 
-@import "section/hero";
-@import "section/hero2";
+//@import "section/hero";
+//@import "section/hero2";
 @import "section/hero3";
 @import "section/for-you";
 @import "section/for-client";

@@ -1,3 +1,9 @@
 .hero3{
 
 }
+
+@media (max-width: 48em) {
+  .hero3{
+    display: none;
+  }
+}

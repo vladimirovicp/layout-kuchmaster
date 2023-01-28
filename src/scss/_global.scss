@@ -1,0 +1,18 @@
+.is-desktop{
+
+}
+
+@media (max-width: 48em) {
+  .is-desktop{
+    display: none!important;
+  }
+}
+
+@media (min-width: 48em) {
+
+  .is-mobile{
+    display: none!important;
+  }
+
+}
+

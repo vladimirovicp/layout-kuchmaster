@@ -1,8 +1,6 @@
 .menu{
   padding-top: 1rem;
   padding-bottom: 1rem;
-  //box-shadow: inset .03rem .6rem .7rem 0 rgba(0, 0, 0, 0.1);
-  //background-color: #eaeaea;
   background-color: $color3;
 
   .container{
@@ -13,10 +11,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    &:before {
-      flex: 1;
-      content: '';
-    }
   }
 
   .social2{
@@ -56,25 +50,246 @@
     &._active{
       color: $color1;
       &:after{
-        height: 2px;
-        bottom: -4px;
+        height: .2rem;
+        bottom: -.4rem;
         display: block;
         width: 100%;
         left: 0;
       }
     }
+  }
+}
 
-    &:hover{
-      color: $color1;
+@media (max-width: 48em) {
+  .menu{
+    height: 12rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .social2{
+      display: none;
+    }
+
+    .container{
+      position: relative;
+    }
+
+    &__header-wrapper{
+      position: relative;
+      z-index: 20;
+      background-color: $color3;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 3rem;
+    }
+
+    &__slogan{
+      position: absolute;
+      padding-left: 2.6rem;
+      left: 0;
+      top: 50%;
+      transition: transform .5s;
+      transform: translate(0, -50%);
+    }
+
+    &__contact{
+      position: absolute;
+      padding-left: 2.6rem;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      transition: transform .5s;
+      transform: translate(100%, -50%);
+    }
+
+    &__info{
+      position: relative;
+      margin-left: 2.6rem;
+      width: 100%;
+      height: 100%;
+
+      overflow: hidden;
+      &:before{
+        content: '';
+        width: .4rem;
+        height: 8.4rem;
+        position: absolute;
+        background-color: #AB0E0F;
+        left: 0;
+        top: 2rem;
+        z-index: 5;
+      }
+
+      span{
+        display: block;
+        font-size: 2.4rem;
+        color: $color7;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      &.open{
+        .menu__slogan{
+          transform: translate(-100%, -50%);
+        }
+
+        .menu__contact{
+          transform: translate(0, -50%);
+        }
+      }
+
+    }
+
+
+
+    &__header-mobile{
+
+
+    }
+
+
+
+    &__icon{
+      z-index: 5;
+      display: block;
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+
+      &-circle{
+        width: 8rem;
+        height: 8rem;
+        padding: 2rem 1.2rem;
+        background-color: $color_red-3;
+        border-radius: 50%;
+      }
+
+
+      span, &:before, &:after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: $color3;
+        border-radius: 2rem;
+      }
+
+      &:before, &:after{
+        content: '';
+      }
+
+      &:before{
+        top: 0;
+      }
       &:after{
-        height: 2px;
-        bottom: -4px;
-        display: block;
-        width: 100%;
-        left: 0;
+        bottom: 0;
+      }
+
+      span{
+        top: 50%;
+        transform: scale(1) translate(0, -50%);
+      }
+
+      &.open{
+        span{
+          transform: scale(0) translate(0, -50%);
+        }
+
+        &::before{
+          top:50%;
+          transform: rotate(-45deg) translate(0, -50%);
+        }
+
+        &::after{
+          bottom:50%;
+          transform: rotate(45deg) translate(0, 50%);
+        }
       }
     }
 
+
+
+    &__wrapper{
+      position: absolute;
+      justify-content: center;
+      align-items: stretch;
+      background-color: $color5;
+      padding: 6rem 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: top 0.5s ease 0s;
+      overflow: auto;
+
+    }
+
+    &__list{
+      flex-direction: column;
+    }
+
+    &__item{
+      padding: 0;
+      margin-bottom: 0;
+      height: 0;
+      transition: height 1.5s cubic-bezier(0.23, 1, 0.32, 1), margin-bottom .5s;
+    }
+
+    &__link{
+      font-size: 3.2rem;
+      line-height: 150%;
+
+      &._active{
+        &:after{
+          height: .4rem;
+        }
+      }
+    }
+
+
+    .menu__wrapper.open{
+      //transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      //height: auto;
+      top: 12rem;
+      .menu__list{
+
+      }
+
+      .menu__item{
+        margin-bottom: 5.2rem;
+        height: auto;
+      }
+    }
 
   }
+}
+
+
+@media (min-width: 48em) {
+
+  .menu {
+    &__wrapper {
+      &:before {
+        flex: 1;
+        content: '';
+      }
+    }
+
+    &__link {
+      &:hover{
+        color: $color1;
+        &:after{
+          height: 2px;
+          bottom: -4px;
+          display: block;
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+
 }

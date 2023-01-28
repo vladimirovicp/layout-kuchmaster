@@ -2,7 +2,6 @@
   position: relative;
   padding: 8rem 0;
   background-color: $color3;
-  //border-bottom: 0.1rem solid red;
   &:before{
     content: '';
     display: block;
@@ -44,5 +43,11 @@
       font-weight: 400;
       font-size: 1.4rem;
     }
+  }
+}
+
+@media (max-width: 48em) {
+  .for-client{
+    display: none;
   }
 }

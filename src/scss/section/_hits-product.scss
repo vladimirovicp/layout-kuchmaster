@@ -1,3 +1,9 @@
 .hits-product{
   padding: 8rem 0;
 }
+
+@media (max-width: 48em) {
+  .hits-product{
+    display: none;
+  }
+}
