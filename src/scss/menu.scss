@@ -13,12 +13,6 @@
     width: 100%;
   }
 
-  .social2{
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-
   &__list{
     display: flex;
     align-items: center;
@@ -358,6 +352,12 @@
       &:before {
         flex: 1;
         content: '';
+      }
+
+      .social2{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
       }
     }
 

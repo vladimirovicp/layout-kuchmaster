@@ -20,81 +20,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      /*box-shadow: 0 .6rem .6rem rgba(0, 0, 0, 0.1);*/
       transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-      &:hover {
-        .social2__tooltip {
-          top: -3.6rem;
-          opacity: 1;
-          visibility: visible;
-          pointer-events: auto;
-          text-shadow: 0 -.1rem 0 rgba(0, 0, 0, 0.1);
-          &:before {
-            color: #ffffff;
-          }
-        }
-        svg {
-          fill: #fff;
-        }
-      }
-
-    &.viber{
-      &:hover {
-        background-color: #7360F2;
-        .social2__tooltip {
-          background-color: #7360F2;
-          &:before {
-            background-color: #7360F2;
-          }
-        }
-      }
-    }
-    &.whatsapp{
-      &:hover {
-        background-color: #61CE70;
-        .social2__tooltip {
-          background-color: #61CE70;
-          &:before {
-            background-color: #61CE70;
-          }
-        }
-      }
-    }
-    &.vk{
-      &:hover {
-        background-color: #0077ff;
-        .social2__tooltip {
-          background-color: #0077ff;
-          &:before {
-            background-color: #0077ff;
-          }
-        }
-      }
-    }
-    &.telegram{
-      &:hover {
-        background-color: #3390ec;
-        .social2__tooltip {
-          background-color: #3390ec;
-          &:before {
-            background-color: #3390ec;
-          }
-        }
-      }
-    }
-
-    &.ok{
-      &:hover {
-        background-color: #ed812b;
-        .social2__tooltip {
-          background-color: #ed812b;
-          &:before {
-            background-color: #ed812b;
-          }
-        }
-      }
-    }
   }
 
   &__tooltip {
@@ -142,11 +68,105 @@
 
 @media (max-width: 48em) {
 
+  .social2{
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+    margin: 0 auto;
+
+
+    &__ico{
+      display: flex;
+      svg{
+        width: 5.6rem;
+        height: 5.6rem;
+        fill: #140202;
+        transition: fill .5s;
+      }
+    }
+
+
+  }
+
 }
 
 
 @media (min-width: 48em) {
   .social2{
+    &__link{
+      &:hover {
+        .social2__tooltip {
+          top: -3.6rem;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+          text-shadow: 0 -.1rem 0 rgba(0, 0, 0, 0.1);
+          &:before {
+            color: #ffffff;
+          }
+        }
+        svg {
+          fill: #fff;
+        }
+      }
+
+      &.viber{
+        &:hover {
+          background-color: #7360F2;
+          .social2__tooltip {
+            background-color: #7360F2;
+            &:before {
+              background-color: #7360F2;
+            }
+          }
+        }
+      }
+      &.whatsapp{
+        &:hover {
+          background-color: #61CE70;
+          .social2__tooltip {
+            background-color: #61CE70;
+            &:before {
+              background-color: #61CE70;
+            }
+          }
+        }
+      }
+      &.vk{
+        &:hover {
+          background-color: #0077ff;
+          .social2__tooltip {
+            background-color: #0077ff;
+            &:before {
+              background-color: #0077ff;
+            }
+          }
+        }
+      }
+      &.telegram{
+        &:hover {
+          background-color: #3390ec;
+          .social2__tooltip {
+            background-color: #3390ec;
+            &:before {
+              background-color: #3390ec;
+            }
+          }
+        }
+      }
+      &.ok{
+        &:hover {
+          background-color: #ed812b;
+          .social2__tooltip {
+            background-color: #ed812b;
+            &:before {
+              background-color: #ed812b;
+            }
+          }
+        }
+      }
+    }
+
 
   }
 }
