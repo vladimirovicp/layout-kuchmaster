@@ -66,10 +66,6 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    .social2{
-      display: none;
-    }
-
     .container{
       position: relative;
     }
@@ -102,6 +98,43 @@
       left: 0;
       transition: transform .5s;
       transform: translate(100%, -50%);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-right: 12rem;
+      .contacts__ico{
+        cursor: pointer;
+      }
+
+      .contacts__phone{
+        svg{
+          width: 4rem;
+          height: 4rem;
+        }
+
+      }
+
+      .contacts__email{
+        svg{
+          width: 5rem;
+          height: 4rem;
+        }
+      }
+
+      //.contacts__link-phone{
+      //  font-size: 3.6rem;
+      //  font-weight: bold;
+      //}
+      //
+      //.contacts__link-email{
+      //  font-size: 3.6rem;
+      //  font-weight: bold;
+      //}
+
+
+
+
     }
 
     &__info{
@@ -138,6 +171,55 @@
         .menu__contact{
           transform: translate(0, -50%);
         }
+      }
+
+      &-contact{
+
+        margin: 0 auto;
+        .contacts__link{
+          justify-content: center;
+
+          //height: 0;
+          //opacity: 0;
+          //transition: height .5s cubic-bezier(0.23, 1, 0.32, 1), opacity 1s;
+
+
+        }
+        .contacts__text{
+          font-size: 3.6rem;
+          font-weight: bold;
+          //padding-bottom: 3.6rem;
+
+          opacity: 0;
+          height: 0;
+          padding-bottom: 0;
+          transition: height .5s cubic-bezier(0.23, 1, 0.32, 1), opacity .5s, padding-bottom .1s;
+
+
+        }
+
+        //.contacts__link-phone{
+        //    height: 0;
+        //    opacity: 0;
+        //}
+        //
+        //.contacts__link-email{
+        //    height: 0;
+        //    opacity: 0;
+        //}
+
+        .open{
+          &.contacts__link{
+
+            .contacts__text{
+              padding-bottom: 3.6rem;
+              height: auto;
+              opacity: 1;
+            }
+
+          }
+        }
+
       }
 
     }
@@ -224,6 +306,7 @@
       width: 100%;
       transition: top 0.5s ease 0s;
       overflow: auto;
+      flex-direction: column;
 
     }
 
