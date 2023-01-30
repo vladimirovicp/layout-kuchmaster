@@ -5,8 +5,6 @@
   &__slide{
     position: relative;
   }
-
-
   &__text{
     position: absolute;
     width: 100%;
@@ -65,12 +63,13 @@
         transition: transform 0.3s ease-out .55s;
       }
     }
-
   }
+
+  &__pagination{
+    display: none;
+  }
+
 }
-
-
-
 
 .swiper-slide-active{
   .swiper-full__text{
@@ -86,5 +85,32 @@
         transform: translateX(-105%);
       }
     }
+  }
+}
+
+
+@media (max-width: 48em) {
+  .swiper-full{
+    height: calc( 100vh - 24rem );
+    &__text{
+      &_head{
+
+      }
+      &_info{
+        display: none;
+      }
+    }
+
+    &__pagination{
+      display: block;
+    }
+
+    .swiper-pagination-bullet{
+      width: 3.6rem;
+      height: 3.6rem;
+      line-height: 3.6rem;
+      background-color: $color1;
+    }
+
   }
 }

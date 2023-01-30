@@ -6,5 +6,10 @@ const swiperFull  = new Swiper('.swiper-full', {
         nextEl: '.swiper-full__arrow-next',
         prevEl: '.swiper-full__arrow-prev',
     },
+    pagination: {
+        el: '.swiper-full__pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
 });
 
