@@ -112,5 +112,9 @@
       background-color: $color1;
     }
 
+    &__arrow-prev, &__arrow-next{
+      display: none;
+    }
+
   }
 }
