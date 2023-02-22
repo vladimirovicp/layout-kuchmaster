@@ -1,5 +1,47 @@
 .button{
+  &__crooked{
+    position: relative;
+    background-color: $color1;
+    padding: 1.4rem 3.4rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.03rem;
+    color: #FFFCFC;
+    display: block;
+    border-radius: 4.2rem .5rem 4.2rem .5rem;
+    text-align: center;
+    transition: background-color .5s, border-radius .5s;
+  }
+}
+
+input.button{
+  &__crooked{
+    border: none;
+  }
+}
 
 
+@media (min-width: 48em) {
+  .button{
+    &__crooked{
+      &:hover{
+        &:hover{
+          background-color: $color2;
+        }
+      }
+    }
+  }
+}
 
+@media (max-width: 48em) {
+
+  .button{
+    &__crooked {
+      font-size: 3.2rem;
+      height: 10rem;
+      border-radius: 8.4rem 1rem 8.4rem 1rem;
+      line-height: 4.4rem
+    }
+  }
 }
