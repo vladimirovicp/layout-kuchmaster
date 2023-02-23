@@ -19,6 +19,12 @@
   border-radius: .4rem;
   background-color: $color3;
 
+  &__v-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &__img{
     text-align: center;
     margin-bottom: 2rem;
@@ -26,13 +32,28 @@
       width: 7.5rem;
     }
   }
-  &__title{
-    font-size: 1.8rem;
+
+  &__big-title{
+    font-size: 4.8rem;
+    line-height: 5.9rem;
     text-align: center;
-    font-style: italic;
-    font-weight: 400;
+    color: #6D0F0F;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+
+  &__title{
+    //font-size: 1.8rem;
+    text-align: center;
+    //font-style: italic;
+    //font-weight: 400;
     width: 24rem;
     margin: 0 auto;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: #6D0F0F;
   }
 }
 
