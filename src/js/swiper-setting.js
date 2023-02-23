@@ -13,3 +13,28 @@ const swiperFull  = new Swiper('.swiper-full', {
     },
 });
 
+
+
+// Слайдер Reviews
+const swiperReviews = new Swiper('.reviews__slider', {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 3
+        }
+    },
+    navigation: {
+        nextEl: '.reviews__arrow-next',
+        prevEl: '.reviews__arrow-prev',
+    },
+    pagination: {
+        el: '.reviews__pagination',
+        clickable: true,
+    },
+
+});
