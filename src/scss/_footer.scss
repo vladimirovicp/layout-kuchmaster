@@ -1,0 +1,67 @@
+.footer{
+  padding: 5rem 0 7rem;
+  background-color: $color1;
+  color: #fff;
+
+  &__item{
+    display: flex;
+    align-items: center;
+  }
+
+  &__site{
+    display: flex;
+    &-logo{
+      width: 6.6rem;
+      height: 6.6rem;
+      background-color: $color1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        //width: 3.6rem;
+        //height: 5.5rem;
+      }
+    }
+    &-name{
+      padding-left: 1rem;
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__logo-menu{
+    margin-bottom: 4.8rem;
+  }
+
+  &__map-contacts{
+    margin-bottom: 7rem;
+    justify-content: space-between;
+  }
+
+  &__map{
+    width: 88rem;
+    height: 35rem;
+    background-color: #fff;
+  }
+
+  &__privacy-policy{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+
+  &__copyright{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    justify-content: center;
+  }
+
+
+}

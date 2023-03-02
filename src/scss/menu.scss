@@ -32,6 +32,7 @@
     font-size: 1.8rem;
     padding: 1rem 0;
 
+
     &:after{
       position: relative;
       content: '';
@@ -51,8 +52,24 @@
         left: 0;
       }
     }
+
+    //footer меняем на белый
+    &_white{
+      color: #fff;
+      font-weight: 600;
+      &:after{
+        background-color: #fff;
+      }
+
+      &._active{
+        color: #fff;
+      }
+    }
+
+
   }
 }
+
 
 @media (max-width: 48em) {
   .menu{
@@ -115,20 +132,6 @@
           height: 4rem;
         }
       }
-
-      //.contacts__link-phone{
-      //  font-size: 3.6rem;
-      //  font-weight: bold;
-      //}
-      //
-      //.contacts__link-email{
-      //  font-size: 3.6rem;
-      //  font-weight: bold;
-      //}
-
-
-
-
     }
 
     &__info{
@@ -168,39 +171,19 @@
       }
 
       &-contact{
-
         margin: 0 auto;
         .contacts__link{
           justify-content: center;
-
-          //height: 0;
-          //opacity: 0;
-          //transition: height .5s cubic-bezier(0.23, 1, 0.32, 1), opacity 1s;
-
-
         }
         .contacts__text{
           font-size: 3.6rem;
           font-weight: bold;
-          //padding-bottom: 3.6rem;
-
           opacity: 0;
           height: 0;
           padding-bottom: 0;
           transition: height .5s cubic-bezier(0.23, 1, 0.32, 1), opacity .5s, padding-bottom .1s;
 
-
         }
-
-        //.contacts__link-phone{
-        //    height: 0;
-        //    opacity: 0;
-        //}
-        //
-        //.contacts__link-email{
-        //    height: 0;
-        //    opacity: 0;
-        //}
 
         .open{
           &.contacts__link{
@@ -218,14 +201,10 @@
 
     }
 
-
-
     &__header-mobile{
 
 
     }
-
-
 
     &__icon{
       z-index: 5;
@@ -373,6 +352,12 @@
           left: 0;
         }
       }
+      &_white{
+        &:hover{
+          color: #fff;
+        }
+      }
+
     }
   }
 
