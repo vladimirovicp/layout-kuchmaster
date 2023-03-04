@@ -9,16 +9,6 @@
   &__link{
     display: flex;
     align-items: center;
-    &:hover{
-      .contacts__text{
-        color: $color1;
-      }
-      .contacts__ico{
-        svg{
-          fill: $color1;
-        }
-      }
-    }
   }
 
   &__ico{
@@ -30,6 +20,13 @@
       fill: $color2;
       transition: fill .5s;
     }
+
+    &_white{
+      margin-right: 1rem;
+      svg{
+        fill: white;
+      }
+    }
   }
 
   &__text{
@@ -39,5 +36,51 @@
     font-size: 1.8rem;
     line-height: 132%;
 
+    &_white{
+      font-weight: 400;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .contacts{
+    &__text{
+      font-size: 3.2rem;
+    }
+
+    &__ico{
+      margin-right: 2rem;
+      svg{
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 48em) {
+  .contacts{
+    &__link{
+      &:hover{
+        .contacts__text{
+          color: $color1;
+          &_white{
+            color: white;
+          }
+        }
+
+        .contacts__ico{
+          svg{
+            fill: $color1;
+          }
+          &_white{
+            svg{
+              fill: white;
+            }
+          }
+        }
+      }
+    }
   }
 }

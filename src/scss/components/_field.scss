@@ -1,0 +1,47 @@
+.field{
+  margin-bottom: 3rem;
+  &__label{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  &__items{
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__item{
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .field{
+    margin-bottom: 5rem;
+    &__label{
+      font-size: 3.2rem;
+    }
+
+    &__items{
+      ul{
+
+        li{
+          font-size: 3.2rem;
+        }
+      }
+    }
+    &__item{
+      font-size: 3.2rem;
+    }
+
+  }
+}

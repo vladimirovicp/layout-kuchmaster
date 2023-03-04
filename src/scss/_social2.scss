@@ -63,6 +63,12 @@
       fill: #140202;
       transition: fill .5s;
     }
+
+    &_white{
+      svg{
+        fill: white;
+      }
+    }
   }
 }
 
@@ -74,7 +80,6 @@
     width: 40rem;
     margin: 0 auto;
 
-
     &__ico{
       display: flex;
       svg{
@@ -83,9 +88,24 @@
         fill: #140202;
         transition: fill .5s;
       }
+
+      &_white{
+        svg {
+          fill: white;
+        }
+      }
     }
 
+  }
 
+  .footer{
+    .social2{
+      &__ico{
+        svg{
+
+        }
+      }
+    }
   }
 
 }
