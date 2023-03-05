@@ -31,6 +31,17 @@
     text-align: justify;
   }
 
+  &__description{
+    &-list{
+      margin-top: 1rem;
+      li{
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+
+
   &__person{
     text-align: center;
     &-name{
@@ -81,6 +92,12 @@
     &__description{
       font-size: 3.2rem;
       margin-bottom: 5rem;
+      &-list{
+        margin-top: 2rem;
+        li{
+          font-size: 3.2rem;
+        }
+      }
     }
 
     &:before{
