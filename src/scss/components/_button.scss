@@ -21,6 +21,15 @@ input.button{
   }
 }
 
+.hero3{
+  .button{
+    &__crooked{
+      margin-left: auto;
+      width: 45rem;
+    }
+  }
+}
+
 
 @media (min-width: 48em) {
   .button{
@@ -35,13 +44,21 @@ input.button{
 }
 
 @media (max-width: 48em) {
-
   .button{
     &__crooked {
       font-size: 3.2rem;
       /*height: 10rem;*/
       border-radius: 8.4rem 1rem 8.4rem 1rem;
       line-height: 4.4rem
+    }
+  }
+
+  .hero3{
+    .button{
+      &__crooked{
+        //margin: 0 auto;
+        width: 100%;
+      }
     }
   }
 }
