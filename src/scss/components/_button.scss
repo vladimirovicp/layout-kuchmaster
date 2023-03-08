@@ -47,7 +47,6 @@ input.button{
   .button{
     &__crooked {
       font-size: 3.2rem;
-      /*height: 10rem;*/
       border-radius: 8.4rem 1rem 8.4rem 1rem;
       line-height: 4.4rem
     }
@@ -56,7 +55,6 @@ input.button{
   .hero3{
     .button{
       &__crooked{
-        //margin: 0 auto;
         width: 100%;
       }
     }

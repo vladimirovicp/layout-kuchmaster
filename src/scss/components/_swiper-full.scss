@@ -52,6 +52,18 @@
     }
   }
 
+  &__video{
+    position: absolute;
+    inset: 0;
+    video{
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   &__pagination{
     display: none;
   }
