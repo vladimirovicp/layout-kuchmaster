@@ -44,6 +44,10 @@
 
   &__person{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     &-name{
       font-weight: 600;
       font-size: 1.8rem;

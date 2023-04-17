@@ -23,7 +23,7 @@
     input{
       border: .5rem solid #FDD7D7;
       height: 5rem;
-      min-width: 44rem;
+      min-width: 55rem;
       padding: 0 2rem;
       font-size: 1.8rem;
       &::placeholder{
@@ -60,9 +60,10 @@
       }
     }
     input.button__crooked{
-      white-space: normal;
-      height:10rem;
-      line-height: 4rem;
+      margin: 0 auto;
+      //white-space: normal;
+      //height:10rem;
+      //line-height: 4rem;
     }
   }
 }

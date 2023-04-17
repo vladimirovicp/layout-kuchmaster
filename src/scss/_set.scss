@@ -135,7 +135,7 @@ input[type="number"] {
 }
 
 p{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: normal;
     line-height: 1.5;
     margin-top: 0;
@@ -168,6 +168,11 @@ ul li {
 
     .container {
         width: 100%;
+    }
+
+    ul li {
+        line-height: 120%;
+        margin-bottom: 1rem;
     }
 }
 
