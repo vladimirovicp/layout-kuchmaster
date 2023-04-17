@@ -54,10 +54,7 @@
   }
 
   &__title{
-    //font-size: 1.8rem;
     text-align: center;
-    //font-style: italic;
-    //font-weight: 400;
     width: 24rem;
     margin: 0 auto;
 
@@ -99,10 +96,6 @@
     width: 32rem;
     height: 22.5rem;
     margin-right: 1.5rem;
-
-    img{
-      //width: 32rem;
-    }
   }
   &__title{
     font-size: 1.8rem;
@@ -112,26 +105,6 @@
     align-items: center;
     text-align: center;
   }
-
-  //&__button{
-  //  position: relative;
-  //  background-color: $color1;
-  //  padding: 1.4rem 3.4rem;
-  //  font-weight: 600;
-  //  font-size: 1.8rem;
-  //  line-height: 2.2rem;
-  //  letter-spacing: 0.03rem;
-  //  color: #FFFCFC;
-  //  display: block;
-  //  border-radius: 4.2rem .5rem 4.2rem .5rem;
-  //  text-align: center;
-  //  transition: background-color .5s, border-radius .5s;
-  //
-  //  &:hover{
-  //    border-radius: .5rem .5rem 4.2rem 4.2rem;
-  //    background-color: $color2;
-  //  }
-  //}
 }
 
 @media (max-width: 48em) {
@@ -140,12 +113,10 @@
     height: 24rem;
 
     &__img{
-
       img{
         width: 7rem;
         height: 7rem;
       }
-
       &-bottom{
         padding-bottom: 16rem;
         height: auto;
@@ -153,14 +124,6 @@
           width: 100%;
         }
       }
-
-      &_bottom{
-        //position: absolute;
-        //left: 0;
-        //bottom: 0;
-        //width: 100%;
-      }
-
     }
     &__title{
       color: $color2;
@@ -200,13 +163,6 @@
       line-height: 1.25;
       padding-bottom: 3rem;
     }
-
-    //&__button{
-    //  font-size: 3.2rem;
-    //  height: 10rem;
-    //  border-radius: 8.4rem 1rem 8.4rem 1rem;
-    //  line-height: 4.4rem
-    //}
   }
 
 }

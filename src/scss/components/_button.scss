@@ -30,19 +30,6 @@ input.button{
   }
 }
 
-
-@media (min-width: 48em) {
-  .button{
-    &__crooked{
-      &:hover{
-        &:hover{
-          background-color: $color2;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 48em) {
   .button{
     &__crooked {
@@ -51,11 +38,20 @@ input.button{
       line-height: 4.4rem
     }
   }
-
   .hero3{
     .button{
       &__crooked{
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (hover: hover) {
+  .button{
+    &__crooked{
+      &:hover{
+        background-color: $color2;
       }
     }
   }

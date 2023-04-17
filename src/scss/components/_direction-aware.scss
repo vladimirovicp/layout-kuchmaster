@@ -3,10 +3,8 @@ $timing-fn: ease;
 $turquoise: #1ABC9C;
 $wet-asphalt: #34495E;
 $midnight-blue: #2C3E50;
-//$clouds: #ECF0F1;
 
 .direction-aware{
-  //overflow: hidden;
   width: 100rem;
   margin: 0 auto;
   ul{
@@ -28,7 +26,6 @@ $midnight-blue: #2C3E50;
       border-radius: 0.4rem;
       background-color: $color3;
       overflow: hidden;
-
     }
   }
 
@@ -50,9 +47,7 @@ $midnight-blue: #2C3E50;
     position: absolute;
     top: 0;
     left: 0;
-    //border-radius: 4px;
     pointer-events: none;
-    //background-color: transparentize($turquoise, .1);
     background-color: $color1;
     color: $color3;
     font-size: 1.8rem;
@@ -63,7 +58,6 @@ $midnight-blue: #2C3E50;
     text-align: center;
     padding: 0 5rem;
     line-height: 1.5;
-    //width: 23rem;
 
     transform-origin: 50% 100%;
     animation: out-bottom 0ms ease 0ms 1 forwards;

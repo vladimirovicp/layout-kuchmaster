@@ -90,7 +90,6 @@
 @media (min-width: 48em) {
   .swiper-full{
     &__text{
-
       &_info{
         max-width: 75%;
         bottom: 0;
@@ -121,7 +120,6 @@
 
       }
       &_info{
-        //display: none;
         width: 100%;
         bottom: 4.8rem;
         padding-left: 2.5rem;
