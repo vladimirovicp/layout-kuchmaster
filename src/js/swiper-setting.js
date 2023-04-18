@@ -11,6 +11,22 @@ const swiperFull  = new Swiper('.swiper-full', {
         clickable: true,
         dynamicBullets: true,
     },
+
+    on: {
+        transitionStart: function () {
+            let videos = document.querySelectorAll('video');
+            Array.prototype.forEach.call(videos, function (video) {
+                video.pause();
+            });
+        },
+        transitionEnd: function () {
+            let activeIndex = this.activeIndex;
+            let activeSlide = document.getElementsByClassName('swiper-slide')[activeIndex];
+            let activeSlideVideo = activeSlide.getElementsByTagName('video')[0];
+            activeSlideVideo.play();
+        },
+    }
+
 });
 
 
