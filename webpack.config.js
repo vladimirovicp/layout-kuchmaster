@@ -37,13 +37,22 @@ module.exports = {
         port: 3000,
     },
     plugins: [
+        // new HTMLWebpackPlugin({
+        //     template:  path.resolve(__dirname, 'src/index.html'),
+        //     filename: "index.html",
+        //     minify: {
+        //         collapseWhitespace: isProd
+        //     }
+        // }),
         new HTMLWebpackPlugin({
-            template:  path.resolve(__dirname, 'src/index.html'),
+            template:  path.resolve(__dirname, 'src/front.pug'),
             filename: "index.html",
             minify: {
                 collapseWhitespace: isProd
             }
         }),
+
+
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: `./css/${filename('css')}`,
@@ -65,6 +74,10 @@ module.exports = {
             {
                 test: /\.html$/,
                 loader: 'html-loader',
+            },
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader',
             },
             {
                 test: /\.css$/i,

@@ -1,0 +1,55 @@
+include _mixin
+
+doctype html
+html(lang= 'ru')
+    head
+        meta(charset='utf-8')
+        title= 'КУХМАСТЕР'
+    body
+        header.header
+            .header__top
+                .container
+                    .header__item
+                        a(href='#' class="header__site menu-link")
+                            span
+                                img(src=require('./logo.svg'), alt="логотип Кухмастер")
+                    .header__item.is-desktop
+                        .header__slogan.anima-line-top
+                            .anima-text-left Производство, установка,
+                            .anima-text-right доставка кухонь в Саратове
+                    .header__item.is-desktop
+                        ul.header__contacts.contacts
+                            li.contacts__item
+                                a(href='tel:+79873760788' class="contacts__link")
+                                    span.contacts__ico.contacts__phone
+                                        +main-svg('contacts__ico contacts__phone', './img/svg/sprite.svg#phone')
+                                    span.contacts__text +7 (987) 376-07-88
+                            li.contacts__item
+                                a(href='mailto:kuhmasters@yandex.ru' class="contacts__link")
+                                    span.contacts__ico.contacts__email
+                                        +main-svg('contacts__ico contacts__email', './img/svg/sprite.svg#email')
+                                    span.contacts__text kuhmasters@yandex.ru
+            nav.nav.menu
+                .container
+                    .menu__header-wrapper
+                        .menu__info.is-mobile
+                            .menu__slogan
+                                span Производство, установка,
+                                span доставка кухонь в Саратове
+                            .menu__contact
+                                span.contacts__ico.contacts__phone
+                                    +main-svg('', './img/svg/sprite.svg#phone')
+                                span.contacts__ico.contacts__email
+                                    +main-svg('', './img/svg/sprite.svg#email')
+                        .menu__header-mobile.is-mobile
+                            .menu__icon-circle
+                                .menu__icon
+                                    span
+                    .menu__wrapper
+                        .menu__info-contact.is-mobile
+
+
+
+
+
+
