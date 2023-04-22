@@ -1,48 +1,7 @@
 include _mixin
+include component/_social
 
--
-    const data =
-        {
-            'name_site': 'Кухмастер',
-            'slogan_site_1': 'Производство, установка,',
-            'slogan_site_2': 'доставка кухонь в Саратове,',
-            'phone': '+7 (987) 376-07-88',
-            'phone_href': 'tel:+79873760788',
-            'email': 'kuhmasters@yandex.ru',
-            'email_href': 'mailto:kuhmasters@yandex.ru',
-        };
 
-    const main_menu = [
-        {
-            "name": 'Главная',
-            "href": '#',
-            "active" : '_active',
-        },
-        {
-            "name": 'О нас',
-            "href": '#',
-        },
-        {
-            "name": 'Как заказать',
-            "href": '#',
-        },
-        {
-            "name": 'Наши работы',
-            "href": '#',
-        },
-        {
-            "name": 'Отзывы клиентов',
-            "href": '#',
-        },
-        {
-            "name": 'Контакты',
-            "href": '#',
-        },
-        {
-            "name": 'Статьи',
-            "href": '#',
-        },
-    ];
 
 doctype html
 html(lang= 'ru')
@@ -50,56 +9,11 @@ html(lang= 'ru')
         meta(charset='utf-8')
         title= 'КУХМАСТЕР'
     body
-        header.header
-            .header__top
-                .container
-                    .header__item
-                        a(href='#' class="header__site menu-link")
-                            span.logo.header__site-logo
-                                img(src=require('./logo.svg'), alt="логотип Кухмастер")
-                            span.header__site-name !{data.name_site}
-                    .header__item.is-desktop
-                        .header__slogan.anima-line-top
-                            .anima-text-left !{data.slogan_site_1}
-                            .anima-text-right !{data.slogan_site_2}
-                    .header__item.is-desktop
-                        ul.header__contacts.contacts
-                            li.contacts__item
-                                a(href=data.phone_href class="contacts__link")
-                                    span.contacts__ico.contacts__phone
-                                        +main-svg('', './img/svg/sprite.svg#phone')
-                                    span.contacts__text !{data.phone}
-                            li.contacts__item
-                                a(href=data.email_href class="contacts__link")
-                                    span.contacts__ico.contacts__email
-                                        +main-svg('', './img/svg/sprite.svg#email')
-                                    span.contacts__text !{data.email}
-            nav.nav.menu
-                .container
-                    .menu__header-wrapper
-                        .menu__info.is-mobile
-                            .menu__slogan
-                                span Производство, установка,
-                                span доставка кухонь в Саратове
-                            .menu__contact
-                                span.contacts__ico.contacts__phone
-                                    +main-svg('', './img/svg/sprite.svg#phone')
-                                span.contacts__ico.contacts__email
-                                    +main-svg('', './img/svg/sprite.svg#email')
-                        .menu__header-mobile.is-mobile
-                            .menu__icon-circle
-                                .menu__icon
-                                    span
-                    .menu__wrapper
-                        .menu__info-contact.is-mobile
-                            a(href=data.phone_href class="contacts__link contacts__link-phone")
-                                span.contacts__text !{data.phone}
-                            a(href=data.email_href class="contacts__link contacts__link-email")
-                                span.contacts__text !{data.email}
-                    ul.menu__list
-                        each link in main_menu
-                            li.menu__item
-                                a(href=link.href class="menu__link " + link.active ) !{link.name}
+        include component/_header
+
+
+
+
 
 
 
