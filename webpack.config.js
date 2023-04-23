@@ -76,8 +76,16 @@ module.exports = {
                 loader: 'html-loader',
             },
             {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: /node_modules/,
+            },
+            {
                 test: /\.pug$/,
                 loader: 'pug-loader',
+                options: {
+                    pretty: true,
+                },
             },
             {
                 test: /\.css$/i,

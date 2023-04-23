@@ -341,8 +341,15 @@
       }
     }
 
+
+  }
+
+}
+
+@media (hover: hover) {
+  .menu {
     &__link {
-      &:hover{
+      &:not(._active):hover{
         color: $color1;
         &:after{
           height: 2px;
@@ -357,8 +364,6 @@
           color: #fff;
         }
       }
-
     }
   }
-
 }

@@ -1,15 +1,12 @@
-include _mixin
-include component/_social
+extends layout/main
 
+block variables_layout
+    -
+        let title = 'Главная страница2'
+block content
+    main
+        h1 Контент
 
-
-doctype html
-html(lang= 'ru')
-    head
-        meta(charset='utf-8')
-        title= 'КУХМАСТЕР'
-    body
-        include component/_header
 
 
 
