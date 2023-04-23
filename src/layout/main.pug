@@ -8,6 +8,10 @@ html(lang= 'ru')
         meta(charset='utf-8')
         title #{title}
     body
+
         include ../component/header
         block content
         include ../component/footer
+
+        .pug-download-svg(style="display:none;")
+            img(src=require('./img/svg/sprite.svg'), alt="")

@@ -6,4 +6,12 @@ footer.footer
             a( href="#" class="footer__site menu-link")
                 span.logo.footer__site-logo
                     img(src=require('./logo2.svg'), alt="логотип Кухмастер")
-                span.footer__site-name #{data.name_site}
+                span.footer__site-name #{name_site}
+            .menu__wrapper
+                ul.menu__list
+                    each link in main_menu
+                        li.menu__item
+                            if link.active
+                                span(class="menu__link menu__link_white " + link.active ) !{link.name}
+                            else
+                                a(href=link.href class="menu__link menu__link_white") !{link.name}

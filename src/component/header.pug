@@ -10,11 +10,11 @@ header.header
                 a(href='#' class="header__site menu-link")
                     span.logo.header__site-logo
                         img(src=require('./logo.svg'), alt="логотип Кухмастер")
-                    span.header__site-name !{data.name_site}
+                    span.header__site-name #{name_site}
             .header__item.is-desktop
                 .header__slogan.anima-line-top
-                    .anima-text-left !{data.slogan_site_1}
-                    .anima-text-right !{data.slogan_site_2}
+                    .anima-text-left !{slogan_site_1}
+                    .anima-text-right !{slogan_site_2}
             .header__item.is-desktop
                 ul.header__contacts.contacts
                     li.contacts__item
