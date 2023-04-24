@@ -5,7 +5,22 @@ block variables_layout
         let title = 'Главная страница2'
 block content
     main
-        h1 Контент
+        section.hero3
+            .swiper.swiper-full
+                .swiper-wrapper
+                    .swiper-full__slide.swiper-slide
+                        .swiper-full__text
+                            .swiper-full__text_head Кухни нужен текст
+                            .swiper-full__text_info
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                a(href="#" class="button__crooked") Заказать
+                            .swiper-full__video
+                                video(autoplay loop muted)
+                                    source(src="./video/intro-video-xlg.mp4" type="video/mp4")
+
+
+
+
 
 
 
