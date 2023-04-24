@@ -1,4 +1,4 @@
-mixin social(className)
+mixin social(modificator)
     -
         const social = [
             {
@@ -38,5 +38,9 @@ mixin social(className)
              li.social2__item
                  a(href=soc.href class="social2__link " + soc.class target="_blank" rel="noopener")
                      span(class="social2__tooltip") !{soc.name}
-                     span.social2__ico
-                         +main-svg('', './img/svg/sprite.svg#' + soc.class)
+                     if modificator
+                         span(class="social2__ico " + modificator)
+                             +main-svg('', './img/svg/sprite.svg#' + soc.class)
+                     else
+                         span.social2__ico
+                             +main-svg('', './img/svg/sprite.svg#' + soc.class)

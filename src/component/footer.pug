@@ -24,6 +24,36 @@ footer.footer
                         .field__label Наш адрес:
                         .field__items
                             .field__item г. Саратов, ул. Астраханская 57/73
+                .footer__contacts-item
+                    .field
+                        .field__label График работы:
+                        .field__items
+                            ul.footer__work-schedule
+                                li
+                                    span.footer__work-schedule-day Пн-Пт
+                                    span.footer__work-schedule-time 10.00 - 19.00
+                                li
+                                    span.footer__work-schedule-day Сб, Вс
+                                    span.footer__work-schedule-time 10.00 - 15.00
+                .footer__contacts-item
+                    .field
+                        .field__label Контакты:
+                        .field__items
+                            ul.footer__contacts.contacts
+                                li.contacts__item
+                                    a(href=data.phone_href class="contacts__link")
+                                        span.contacts__ico.contacts__phone.contacts__ico_white
+                                            +main-svg('', './img/svg/sprite.svg#phone')
+                                        span.contacts__text.contacts__text_white !{data.phone}
+                                li.contacts__item
+                                    a(href=data.email_href class="contacts__link")
+                                        span.contacts__ico.contacts__email.contacts__ico_white
+                                            +main-svg('', './img/svg/sprite.svg#email')
+                                        span.contacts__text.contacts__text_white !{data.email}
+                +social('social2__ico_white')
+
+
+
 
 
 
