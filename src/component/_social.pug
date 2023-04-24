@@ -33,14 +33,14 @@ mixin social(modificator)
             },
         ];
 
-    ul.social2
+    ul.social
          each soc in social
-             li.social2__item
-                 a(href=soc.href class="social2__link " + soc.class target="_blank" rel="noopener")
-                     span(class="social2__tooltip") !{soc.name}
+             li.social__item
+                 a(href=soc.href class="social__link " + soc.class target="_blank" rel="noopener")
+                     span(class="social__tooltip") !{soc.name}
                      if modificator
-                         span(class="social2__ico " + modificator)
+                         span(class="social__ico " + modificator)
                              +main-svg('', './img/svg/sprite.svg#' + soc.class)
                      else
-                         span.social2__ico
+                         span.social__ico
                              +main-svg('', './img/svg/sprite.svg#' + soc.class)
