@@ -1,5 +1,6 @@
-import 'splitting/dist/splitting.min.js';
+//import 'splitting/dist/splitting.min.js';
 
+import '../fonts/fonts.scss';
 import '../scss/main.scss';
 import '../front.pug';
 

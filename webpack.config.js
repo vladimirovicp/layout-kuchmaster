@@ -130,15 +130,18 @@ module.exports = {
                 test: /\.(gif|png|jpg|jpeg|svg)$/i,
                 type: 'asset/resource',
             },
+
+            //load fonts
             {
                 // test: /\.(eot|ttf|woff)$/i,
-                test: /\.(woff2)$/i,
-                use:[{
-                    loader: "file-loader",
-                    options: {
-                        name: `./fonts/${filename('[ext]')}`
-                    }
-                }],
+                test: /\.(woff2?|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                // use:[{
+                //     loader: "file-loader",
+                //     options: {
+                //         name: `./fonts/${filename('[ext]')}`
+                //     }
+                // }],
 
             },
         ]
