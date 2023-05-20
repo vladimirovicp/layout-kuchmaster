@@ -5,7 +5,7 @@ footer.footer
         .footer__item.footer__logo-menu.is-desktop
             a( href="#" class="footer__site menu-link")
                 span.logo.footer__site-logo
-                    img(src=require('./logo2.svg'), alt="логотип Кухмастер")
+                    img(src=require('/logo2.svg'), alt="логотип Кухмастер")
                 span.footer__site-name #{name_site}
             .menu__wrapper
                 ul.menu__list
@@ -43,12 +43,12 @@ footer.footer
                                 li.contacts__item
                                     a(href=data.phone_href class="contacts__link")
                                         span.contacts__ico.contacts__phone.contacts__ico_white
-                                            +main-svg('', './img/svg/sprite.svg#phone')
+                                            +main-svg('', '/img/svg/sprite.svg#phone')
                                         span.contacts__text.contacts__text_white !{data.phone}
                                 li.contacts__item
                                     a(href=data.email_href class="contacts__link")
                                         span.contacts__ico.contacts__email.contacts__ico_white
-                                            +main-svg('', './img/svg/sprite.svg#email')
+                                            +main-svg('', '/img/svg/sprite.svg#email')
                                         span.contacts__text.contacts__text_white !{data.email}
                 +social('social__ico_white')
 

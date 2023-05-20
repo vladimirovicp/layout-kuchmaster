@@ -12,6 +12,16 @@
       }
     }
   }
+  &__page{
+    font-size: 4.2rem;
+    line-height: 1.5;
+    margin-bottom: 7rem;
+    color: $color7;
+  }
+
+  &-center{
+    text-align: center;
+  }
 }
 
 @media (max-width: 48em) {

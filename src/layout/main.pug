@@ -2,6 +2,7 @@ doctype html
 block variables_layout
 block vars
     include ../component/variable
+    curPage
 
 html(lang= 'ru')
     head
@@ -14,4 +15,4 @@ html(lang= 'ru')
         include ../component/footer
 
         .pug-download-svg(style="display:none;")
-            img(src=require('./img/svg/sprite.svg'), alt="")
+            img(src=require('/img/svg/sprite.svg'), alt="")

@@ -39,19 +39,21 @@ module.exports = {
         port: 3000,
     },
     plugins: [
-        // new HTMLWebpackPlugin({
-        //     template:  path.resolve(__dirname, 'src/index.html'),
-        //     filename: "index.html",
-        //     minify: {
-        //         collapseWhitespace: isProd
-        //     }
-        // }),
         new HTMLWebpackPlugin({
             template:  path.resolve(__dirname, 'src/front.pug'),
             filename: "index.html",
             // minify: {
             //     collapseWhitespace: isProd
             // }
+        }),
+        new HTMLWebpackPlugin({
+            template:  path.resolve(__dirname, 'src/page/about.pug'),
+            filename: "about.html",
+        }),
+
+        new HTMLWebpackPlugin({
+            template:  path.resolve(__dirname, 'src/page/test.pug'),
+            filename: "test.html",
         }),
 
 
@@ -133,16 +135,8 @@ module.exports = {
 
             //load fonts
             {
-                // test: /\.(eot|ttf|woff)$/i,
                 test: /\.(woff2?|eot|ttf|otf)$/i,
                 type: 'asset/resource',
-                // use:[{
-                //     loader: "file-loader",
-                //     options: {
-                //         name: `./fonts/${filename('[ext]')}`
-                //     }
-                // }],
-
             },
         ]
     }

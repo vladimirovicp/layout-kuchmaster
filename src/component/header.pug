@@ -9,7 +9,7 @@ header.header
             .header__item
                 a(href='#' class="header__site menu-link")
                     span.logo.header__site-logo
-                        img(src=require('./logo.svg'), alt="логотип Кухмастер")
+                        img(src=require('/logo.svg'), alt="логотип Кухмастер")
                     span.header__site-name #{name_site}
             .header__item.is-desktop
                 .header__slogan.anima-line-top
@@ -20,12 +20,12 @@ header.header
                     li.contacts__item
                         a(href=data.phone_href class="contacts__link")
                             span.contacts__ico.contacts__phone
-                                +main-svg('', './img/svg/sprite.svg#phone')
+                                +main-svg('', '/img/svg/sprite.svg#phone')
                             span.contacts__text !{data.phone}
                     li.contacts__item
                         a(href=data.email_href class="contacts__link")
                             span.contacts__ico.contacts__email
-                                +main-svg('', './img/svg/sprite.svg#email')
+                                +main-svg('', '/img/svg/sprite.svg#email')
                             span.contacts__text !{data.email}
     nav.nav.menu
         .container
@@ -36,9 +36,9 @@ header.header
                         span доставка кухонь в Саратове
                     .menu__contact
                         span.contacts__ico.contacts__phone
-                            +main-svg('', './img/svg/sprite.svg#phone')
+                            +main-svg('', '/img/svg/sprite.svg#phone')
                         span.contacts__ico.contacts__email
-                            +main-svg('', './img/svg/sprite.svg#email')
+                            +main-svg('', '/img/svg/sprite.svg#email')
                 .menu__header-mobile.is-mobile
                     .menu__icon-circle
                         .menu__icon
@@ -52,8 +52,10 @@ header.header
                 ul.menu__list
                     each link in main_menu
                         li.menu__item
-                            if link.active
-                                span(class="menu__link " + link.active ) !{link.name}
+
+                            if curPage === link.href
+                                span(class="menu__link _active") !{link.name}
                             else
                                 a(href=link.href class="menu__link") !{link.name}
+
                 +social('')
