@@ -1,0 +1,75 @@
+-
+    let product = [
+        {
+            'src':'./img/hits-product/1.jpg',
+            'alt':'Кухни в скандинавском стиле',
+            'title':'Кухни в скандинавском стиле',
+            'button_href': '#',
+            'button_text': 'Перейти в Каталог',
+        },
+        {
+            'src': './img/hits-product/2.jpg',
+            'alt': 'Кухни в современном стиле',
+            'title': 'Кухни в современном стиле',
+            'button_href': '#',
+            'button_text': 'Перейти в Каталог',
+        },
+        {
+            'src': './img/hits-product/3.jpg',
+            'alt': 'Кухни в стиле лофт',
+            'title': 'Кухни в стиле лофт',
+            'button_href': '#',
+            'button_text': 'Перейти в Каталог',
+        },
+        {
+            'src': './img/hits-product/1.jpg',
+            'alt': 'Кухни в стиле нео-классика',
+            'title': 'Кухни в стиле нео-классика',
+            'button_href': '#',
+            'button_text': 'Перейти в Каталог',
+        },
+        {
+            'src': './img/hits-product/5.jpg',
+            'alt': 'Кухни с фасадами из эмали',
+            'title': 'Кухни с фасадами из эмали',
+            'button_href': '#',
+            'button_text': 'Перейти в Каталог',
+        },
+        {
+            'src': './img/hits-product/1.jpg',
+            'alt': 'Кухни с фасадами из шпона',
+            'title': 'Кухни с фасадами из шпона',
+            'button_href': '#',
+            'button_text': 'Перейти в Каталог',
+        },
+        {
+            'src': './img/hits-product/7.jpg',
+            'alt': 'Кухни с фасадами из пленки ПВХ',
+            'title': 'Кухни с фасадами из пленки ПВХ',
+            'button_href': '#',
+            'button_text': 'Перейти в Каталог',
+        },
+        {
+            'src': './img/hits-product/8.jpg',
+            'alt': 'Кухни до потолка',
+            'title': 'Кухни до потолка',
+            'button_href': '#',
+            'button_text': 'Перейти в Каталог',
+        },
+    ];
+
+
+.hits-product
+    .container
+        .title
+            .title__section Хиты Продаж
+
+        .cards3
+            each item in product
+                .card3
+                    .card3__img
+                        img(src=item.src alt=item.alt)
+                    .wrapper
+                        .card3__title !{item.title}
+                        a(href=item.button_href class="button__crooked") !{item.button_text}
+
