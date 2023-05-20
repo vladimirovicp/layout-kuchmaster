@@ -11,10 +11,15 @@ footer.footer
                 ul.menu__list
                     each link in main_menu
                         li.menu__item
-                            if link.active
-                                span(class="menu__link menu__link_white " + link.active ) !{link.name}
+                            if curPage === link.href
+                                span(class="menu__link menu__link_white _active") !{link.name}
                             else
                                 a(href=link.href class="menu__link menu__link_white") !{link.name}
+
+                            //if link.active
+                            //    span(class="menu__link menu__link_white " + link.active ) !{link.name}
+                            //else
+                            //    a(href=link.href class="menu__link menu__link_white") !{link.name}
         .footer__item.footer__map-contacts
             .footer__map
                 iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Af3cdfffe07672a1fc653d9673437d560df7cabbad607145bd910bc2b3a84ff99&amp;source=constructor" width="900" height="350" frameborder="0")
@@ -51,12 +56,6 @@ footer.footer
                                             +main-svg('', '/img/svg/sprite.svg#email')
                                         span.contacts__text.contacts__text_white !{data.email}
                 +social('social__ico_white')
-
-
-
-
-
-
 
         .footer__item.footer__privacy-policy
             a(href="#") Политика конфиденциальности
