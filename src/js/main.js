@@ -7,6 +7,7 @@ import '../front.pug';
 import './burger'
 import '../js/swiper-setting';
 import '../js/direction-aware';
+import './rutube_video';
 
 
 
