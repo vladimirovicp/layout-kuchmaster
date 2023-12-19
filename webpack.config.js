@@ -39,22 +39,32 @@ module.exports = {
         port: 3000,
     },
     plugins: [
+
+        
         new HTMLWebpackPlugin({
-            template:  path.resolve(__dirname, 'src/front.pug'),
+            template:  path.resolve(__dirname, 'src/promo.pug'),
             filename: "index.html",
             // minify: {
             //     collapseWhitespace: isProd
             // }
         }),
-        new HTMLWebpackPlugin({
-            template:  path.resolve(__dirname, 'src/page/about.pug'),
-            filename: "about.html",
-        }),
 
-        new HTMLWebpackPlugin({
-            template:  path.resolve(__dirname, 'src/page/test.pug'),
-            filename: "test.html",
-        }),
+        // new HTMLWebpackPlugin({
+        //     template:  path.resolve(__dirname, 'src/front.pug'),
+        //     filename: "index.html",
+        //     // minify: {
+        //     //     collapseWhitespace: isProd
+        //     // }
+        // }),
+        // new HTMLWebpackPlugin({
+        //     template:  path.resolve(__dirname, 'src/page/about.pug'),
+        //     filename: "about.html",
+        // }),
+
+        // new HTMLWebpackPlugin({
+        //     template:  path.resolve(__dirname, 'src/page/test.pug'),
+        //     filename: "test.html",
+        // }),
 
 
         new CleanWebpackPlugin(),
@@ -129,7 +139,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(gif|png|jpg|jpeg|svg)$/i,
+                test: /\.(gif|png|jpg|jpeg|svg|avif|webp)$/i,
                 type: 'asset/resource',
             },
 

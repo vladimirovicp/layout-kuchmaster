@@ -1,0 +1,50 @@
+-
+    let chooseUs = [
+        {
+            'num':'13645',
+            'text':'Довольных',
+            'text2':'клиентов'
+        },
+        {
+            'num':'2200',
+            'text':'Видов расцветок',
+            'text2':'и материалов'
+        },
+        {
+            'num':'15',
+            'text':'Лет',
+            'text2':'гарантии на продукцию'
+        },
+                {
+            'num':'20',
+            'text':'Лет',
+            'text2':'успешного производства'
+        }
+    ];
+
+
+section.hero-promo
+    .hero-promo__bg
+        picture
+            source(srcset=require(`../img/promo/hero/bg.avif`) type="image/avif")
+            source(srcset=require(`../img/promo/hero/bg.webp`) type="image/webp")
+            img(src=require(`../img/promo/hero/bg.jpg`) alt="Кухня кухмастер Саратов") 
+    .container
+        .hero-promo__title
+            span Комфортные кухни 
+            |на заказ по индивидуальному проекту точно в срок
+        ul.hero-promo__info
+            li Работаем по Саратову и области
+            li Репутация надежного партнера
+        .hero-promo__btns
+            .hero-promo__btn-wrapper
+                a(href="#" class="button__crooked") Получить консультацию
+            .hero-promo__btn-wrapper
+                a(href="#" class="button__crooked") Записаться на визит в Шоу-рум
+        .hero-promo__choose-us
+            .item
+                .num 13645
+                .text Довольных клиентов
+
+
+
