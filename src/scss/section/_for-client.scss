@@ -28,7 +28,6 @@
   &__text{
     width: 54rem;
     font-size: 1.8rem;
-    text-align: justify;
   }
 
   &__description{
@@ -108,6 +107,14 @@
       height: 10.2rem;
       background-size: cover;
       background-position: -33.5rem center;
+    }
+  }
+}
+
+@media (min-width: 48em) {
+  .for-client{
+    &__text{
+      text-align: justify;
     }
   }
 }

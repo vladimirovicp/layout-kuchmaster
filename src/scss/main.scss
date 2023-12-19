@@ -9,8 +9,8 @@
 //@import "mixins";
 @import "vendor";
 @import "set";
+
 @import "social";
-@import "social2";
 @import "animations";
 @import "contacts";
 @import "header";
@@ -27,10 +27,11 @@
 @import "components/direction-aware";  //Direction-aware hover effect - Эффект зависания с учетом направления
 @import "components/button";
 @import "components/field";
+@import "components/youtube-video";
+@import "components/vimeo-video";
 
-//@import "section/hero";
-//@import "section/hero2";
-@import "section/hero3";
+
+@import "section/hero";
 @import "section/for-you";
 @import "section/for-client";
 @import "section/hits-product";
@@ -39,6 +40,7 @@
 @import "section/reviews";
 @import "section/how-to-order";
 
+@import "page/about";
 
 
 

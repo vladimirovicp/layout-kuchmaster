@@ -341,6 +341,13 @@
       }
     }
 
+
+  }
+
+}
+
+@media (hover: hover) {
+  .menu {
     &__link {
       &:hover{
         color: $color1;
@@ -357,8 +364,6 @@
           color: #fff;
         }
       }
-
     }
   }
-
 }

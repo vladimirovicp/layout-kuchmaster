@@ -1,0 +1,63 @@
+block vars
+
+footer.footer
+    .container
+        .footer__item.footer__logo-menu.is-desktop
+            a( href="#" class="footer__site menu-link")
+                span.logo.footer__site-logo
+                    img(src=require('/logo2.svg'), alt="логотип Кухмастер")
+                span.footer__site-name #{name_site}
+            .menu__wrapper
+                ul.menu__list
+                    each link in main_menu
+                        li.menu__item
+                            if curPage === link.href
+                                span(class="menu__link menu__link_white _active") !{link.name}
+                            else
+                                a(href=link.href class="menu__link menu__link_white") !{link.name}
+
+                            //if link.active
+                            //    span(class="menu__link menu__link_white " + link.active ) !{link.name}
+                            //else
+                            //    a(href=link.href class="menu__link menu__link_white") !{link.name}
+        .footer__item.footer__map-contacts
+            .footer__map
+                iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Af3cdfffe07672a1fc653d9673437d560df7cabbad607145bd910bc2b3a84ff99&amp;source=constructor" width="900" height="350" frameborder="0")
+            .footer__contacts
+                .footer__contacts-item
+                    .field
+                        .field__label Наш адрес:
+                        .field__items
+                            .field__item г. Саратов, ул. Астраханская 57/73
+                .footer__contacts-item
+                    .field
+                        .field__label График работы:
+                        .field__items
+                            ul.footer__work-schedule
+                                li
+                                    span.footer__work-schedule-day Пн-Пт
+                                    span.footer__work-schedule-time 10.00 - 19.00
+                                li
+                                    span.footer__work-schedule-day Сб, Вс
+                                    span.footer__work-schedule-time 10.00 - 15.00
+                .footer__contacts-item
+                    .field
+                        .field__label Контакты:
+                        .field__items
+                            ul.footer__contacts.contacts
+                                li.contacts__item
+                                    a(href=data.phone_href class="contacts__link")
+                                        span.contacts__ico.contacts__phone.contacts__ico_white
+                                            +main-svg('', '/img/svg/sprite.svg#phone')
+                                        span.contacts__text.contacts__text_white !{data.phone}
+                                li.contacts__item
+                                    a(href=data.email_href class="contacts__link")
+                                        span.contacts__ico.contacts__email.contacts__ico_white
+                                            +main-svg('', '/img/svg/sprite.svg#email')
+                                        span.contacts__text.contacts__text_white !{data.email}
+                +social('social__ico_white')
+
+        .footer__item.footer__privacy-policy
+            a(href="#") Политика конфиденциальности
+        .footer__item.footer__copyright © Кухмастер 2013 - 2023
+

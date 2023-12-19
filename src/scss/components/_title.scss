@@ -12,6 +12,22 @@
       }
     }
   }
+  &__left{
+    margin-bottom: 1.8rem;
+    letter-spacing: .3rem;
+    font-size: 3.6rem;
+    font-weight: 600;
+  }
+  &__page{
+    font-size: 4.2rem;
+    line-height: 1.5;
+    margin-bottom: 7rem;
+    color: $color7;
+  }
+
+  &-center{
+    text-align: center;
+  }
 }
 
 @media (max-width: 48em) {

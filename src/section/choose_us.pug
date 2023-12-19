@@ -1,0 +1,44 @@
+-
+    let choose = [
+        {
+            'big_title': '20',
+            'title': 'лет'
+        },
+        {
+            'big_title': '1100+',
+            'title': 'довольных клиентов'
+        },
+        {
+            'big_title': '99%',
+            'title': 'положительных отзывов'
+        },
+        {
+            'src': './img/home/choose-us/svg/choose-us-1.svg',
+            'alt': 'Гарантийная поддержка',
+            'title': 'Гарантийная поддержка'
+        },
+        {
+            'src': './img/home/choose-us/svg/choose-us-2.svg',
+            'alt': 'Выверенные проекты',
+            'title': 'Выверенные проекты'
+        },
+        {
+            'src': './img/home/choose-us/svg/choose-us-3.svg',
+            'alt': 'Профессиональная сборка',
+            'title': 'Профессиональная сборка'
+        },
+    ];
+
+.choose-us
+    .container
+        .title
+            .title__section Почему выбирают нас
+        .cards2
+            each item in choose
+                .card2.card2__v-centered
+                    if (item.big_title !== undefined)
+                        .card2__big-title !{item.big_title}
+                    if (item.src !== undefined)
+                        .card2__img
+                            img(src=item.src alt=item.alt)
+                    .card2__title !{item.title}

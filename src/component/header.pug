@@ -1,0 +1,61 @@
+include ../_mixin
+include ../component/_social
+block vars
+
+
+header.header
+    .header__top
+        .container
+            .header__item
+                a(href='#' class="header__site menu-link")
+                    span.logo.header__site-logo
+                        img(src=require('/logo.svg'), alt="логотип Кухмастер")
+                    span.header__site-name #{name_site}
+            .header__item.is-desktop
+                .header__slogan.anima-line-top
+                    .anima-text-left !{slogan_site_1}
+                    .anima-text-right !{slogan_site_2}
+            .header__item.is-desktop
+                ul.header__contacts.contacts
+                    li.contacts__item
+                        a(href=data.phone_href class="contacts__link")
+                            span.contacts__ico.contacts__phone
+                                +main-svg('', '/img/svg/sprite.svg#phone')
+                            span.contacts__text !{data.phone}
+                    li.contacts__item
+                        a(href=data.email_href class="contacts__link")
+                            span.contacts__ico.contacts__email
+                                +main-svg('', '/img/svg/sprite.svg#email')
+                            span.contacts__text !{data.email}
+    nav.nav.menu
+        .container
+            .menu__header-wrapper
+                .menu__info.is-mobile
+                    .menu__slogan
+                        span Производство, установка,
+                        span доставка кухонь в Саратове
+                    .menu__contact
+                        span.contacts__ico.contacts__phone
+                            +main-svg('', '/img/svg/sprite.svg#phone')
+                        span.contacts__ico.contacts__email
+                            +main-svg('', '/img/svg/sprite.svg#email')
+                .menu__header-mobile.is-mobile
+                    .menu__icon-circle
+                        .menu__icon
+                            span
+            .menu__wrapper
+                .menu__info-contact.is-mobile
+                    a(href=data.phone_href class="contacts__link contacts__link-phone")
+                        span.contacts__text !{data.phone}
+                    a(href=data.email_href class="contacts__link contacts__link-email")
+                        span.contacts__text !{data.email}
+                ul.menu__list
+                    each link in main_menu
+                        li.menu__item
+
+                            if curPage === link.href
+                                span(class="menu__link _active") !{link.name}
+                            else
+                                a(href=link.href class="menu__link") !{link.name}
+
+                +social('')

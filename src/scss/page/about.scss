@@ -1,0 +1,29 @@
+.about{
+
+  &-front{
+    padding: 8rem 0 15.5rem;
+    background-image: url("../img/bg-section/kitchen-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .wrapper{
+      justify-content: space-between;
+    }
+
+    &__text{
+      width: 86rem;
+    }
+
+    &__img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 38rem;
+      &-logo{
+        display: flex;
+
+      }
+    }
+
+  }
+}

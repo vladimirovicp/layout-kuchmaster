@@ -9,16 +9,6 @@
 }
 
 html {
-    //font-family: 'Open Sans', sans-serif;
-    //font-size: 0.52vw;  //на разрешении 1920 0.52vw === 10px
-    //font-size: 0.74vw;
-
-    //на разрешении 1350 0.74vw === 10px
-    //10/(1350/100)
-    //10/1920/100)
-    //10/1440/100 -> 0,694(4)
-    //font-size: 0.5208vw;
-
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -84,6 +74,11 @@ h6 {
     padding: 0;
 }
 
+h2{
+    font-size: 3.6rem;
+    line-height: 1.5;
+}
+
 h3{
     font-size: 1.8rem;
     margin-bottom: 1.8rem;
@@ -146,7 +141,6 @@ ul li {
     margin: 0 0 0 2.5rem;
     padding: 0;
     line-height: 150%;
-    //list-style: none;
     font-size: 1.4rem;
     font-weight: normal;
 }
@@ -158,7 +152,6 @@ ul li {
 @media (max-width: 48em) {
     html {
         font-size: 1.5625vw;
-        // font-size: 5/(320/100); // где 320 это ширина моб версии макета
         -webkit-text-size-adjust: none;
     }
 

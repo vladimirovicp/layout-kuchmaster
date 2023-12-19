@@ -1,0 +1,46 @@
+mixin social(modificator)
+    -
+        const social = [
+            {
+                'href': 'viber://chat?number=%2B79873760788',
+                'name': 'Viber',
+                'class': 'viber'
+            },
+            {
+                'href': 'https://wa.me/+79873760788',
+                'name': 'Whatsapp',
+                'class': 'whatsapp'
+            },
+            {
+                'href': 'https://vk.com/kuhmaste_r',
+                'name': 'ВКонтакте',
+                'class': 'vk'
+            },
+            {
+                'href': '#',
+                'name': 'Телеграм',
+                'class': 'telegram'
+            },
+            {
+                'href': 'https://ok.ru/group/57317203247128',
+                'name': 'Одноклассники',
+                'class': 'ok'
+            },
+            {
+                'href': 'https://dzen.ru/kuhmaster',
+                'name': 'Dzen',
+                'class': 'dzen'
+            },
+        ];
+
+    ul.social
+         each soc in social
+             li.social__item
+                 a(href=soc.href class="social__link " + soc.class target="_blank" rel="noopener")
+                     span(class="social__tooltip") !{soc.name}
+                     if modificator
+                         span(class="social__ico " + modificator)
+                             +main-svg('', './img/svg/sprite.svg#' + soc.class)
+                     else
+                         span.social__ico
+                             +main-svg('', './img/svg/sprite.svg#' + soc.class)

@@ -3,6 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -20,6 +21,7 @@ module.exports = {
     entry: './js/main.js', // Указываем входную точку
     output: { // Указываем точку выхода
         path: path.resolve(__dirname, pathDirFile), // Тут мы указываем полный путь к директории, где будет храниться конечный файл
+        //path: path.join(__dirname, pathDirFile),
         filename: `./js/${filename('js')}`, // Указываем имя этого файла
         // assetModuleFilename: '[path][name][ext]',
         assetModuleFilename: assetFilename,
@@ -29,7 +31,7 @@ module.exports = {
         historyApiFallback: true,
         static: {
             // directory: path.resolve(__dirname, 'app'),
-            directory: path.join(__dirname, 'app'),
+            directory: path.join(__dirname, 'src'),
         },
         open: true,
         compress: true,
@@ -38,12 +40,23 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template:  path.resolve(__dirname, 'src/index.html'),
+            template:  path.resolve(__dirname, 'src/front.pug'),
             filename: "index.html",
-            minify: {
-                collapseWhitespace: isProd
-            }
+            // minify: {
+            //     collapseWhitespace: isProd
+            // }
         }),
+        new HTMLWebpackPlugin({
+            template:  path.resolve(__dirname, 'src/page/about.pug'),
+            filename: "about.html",
+        }),
+
+        new HTMLWebpackPlugin({
+            template:  path.resolve(__dirname, 'src/page/test.pug'),
+            filename: "test.html",
+        }),
+
+
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: `./css/${filename('css')}`,
@@ -57,14 +70,40 @@ module.exports = {
         //     ]
         // }),
 
-    ],
+        // new FileManagerPlugin({
+        //     events: {
+        //         onStart: {
+        //             delete: ['dist'],
+        //         },
+        //         onEnd: {
+        //             copy: [
+        //                 {
+        //                     source: path.join('static', 'video'), destination: 'dist',
+        //                 },
+        //             ],
+        //         },
+        //     },
+        // }),
 
+    ],
 
     module:{
         rules: [
             {
                 test: /\.html$/,
                 loader: 'html-loader',
+            },
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader',
+                options: {
+                    pretty: true,
+                },
             },
             {
                 test: /\.css$/i,
@@ -93,16 +132,11 @@ module.exports = {
                 test: /\.(gif|png|jpg|jpeg|svg)$/i,
                 type: 'asset/resource',
             },
-            {
-                // test: /\.(eot|ttf|woff)$/i,
-                test: /\.(woff2)$/i,
-                use:[{
-                    loader: "file-loader",
-                    options: {
-                        name: `./fonts/${filename('[ext]')}`
-                    }
-                }],
 
+            //load fonts
+            {
+                test: /\.(woff2?|eot|ttf|otf)$/i,
+                type: 'asset/resource',
             },
         ]
     }

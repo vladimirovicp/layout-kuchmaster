@@ -1,0 +1,75 @@
+-
+    let slides = [
+        {
+            'textHead': 'Кухни нужен текст',
+            'textInfo': 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.',
+            'textInfoBtn': {
+                'href': '#',
+                'text': 'Заказать',
+            },
+            'video': {
+                'src': './video/intro-video-xlg.mp4',
+            },
+        },
+        {
+            'textHead': 'Кухни на заказ в Саратове',
+            'textInfo': 'Красивые практичные кухни ПО ИНДИВИДУАЛЬНОМУ ПРОЕКТУ С ТОЧНОСТЬЮ ДО МИЛЛИМЕТРА. Закажите бесплатный проект или расчет вашей кухни.',
+            'textInfoBtn': {
+                'href': '#',
+                'text': 'Заказать',
+            },
+            'img': {
+                'src': './img/hero/slide3.jpg',
+                'alt': 'Кухни на заказ в Саратове'
+            },
+        },
+        {
+            'textHead': 'Кухни без ручек в Саратове',
+            'textInfo': 'Минимализм остается популярным и в 2023 году, а значит, на фасадах все еще отсутствуют ручки. В нашем шоу-руме в Саратове вы можете посмотреть и, главное, опробовать в деле все варианты, что существуют на современном мебельном рынке.',
+            'textInfoBtn': {
+                'href': '#',
+                'text': 'Посмотреть варианты',
+            },
+            'img': {
+                'src': './img/hero/slide2.jpg',
+                'alt': 'Кухни без ручек'
+            },
+        },
+        {
+            'textHead': 'Белые кухни в Саратове',
+            'textInfo': 'БЕЛЫЕ КУХНИ - ТРЕНД, КОТОРЫЙ НЕ ТЕРЯЕТ ПОПУЛЯРНОСТИ. У нас, в Кухмастере, вы подберете около 10 видов фасадов в белом цвете, а оттенков белого цвета - сотни! Пожалуй, это самый большой выбор белых кухонь в Саратове.',
+            'textInfoBtn': {
+                'href': '#',
+                'text': 'Подобрать белую кухню',
+            },
+            'video': {
+                'src': './video/white-kitchen.mp4',
+            },
+            // 'img': {
+            //     'src': './img/hero/slide4.jpg',
+            //     'alt': 'Белые кухни'
+            // },
+        },
+    ];
+
+section.hero
+    .swiper.swiper-full
+        .swiper-wrapper
+
+            each slide in slides
+                .swiper-full__slide.swiper-slide
+                    .swiper-full__text
+                        .swiper-full__text-head !{slide.textHead}
+                        .swiper-full__text-info
+                            p !{slide.textInfo}
+                            a(href=slide.textInfoBtn.href class="button__crooked") !{slide.textInfoBtn.text}
+                    .swiper-full__video
+                        if (slide.video !== undefined)
+                            video(autoplay loop muted)
+                                source(src=slide.video.src type="video/mp4")
+                        if (slide.img !== undefined)
+                            img(src=slide.img.src alt=slide.img.alt)
+
+        .swiper-pagination.swiper-full__pagination
+        .swiper-button-prev.swiper-full__arrow-prev.slider__arrow-prev
+        .swiper-button-next.swiper-full__arrow-next.slider__arrow-next

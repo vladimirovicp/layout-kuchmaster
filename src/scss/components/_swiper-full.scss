@@ -1,3 +1,5 @@
+@import "../abstracts/variable";
+
 .swiper-full{
   position: relative;
   height: calc( 100vh - 18rem );
@@ -10,7 +12,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    &_head{
+    &-head{
       position: absolute;
       top: 14rem;
       color: #fff;
@@ -36,7 +38,7 @@
       }
     }
 
-    &_info{
+    &-info{
       position: absolute;
       z-index: 1;
       font-size: 2em;
@@ -77,13 +79,13 @@
 
 .swiper-slide-active{
   .swiper-full__text{
-    &_head{
+    &-head{
       transform: translateX(0);
       &:before{
         transform: translateX(105%);
       }
     }
-    &_info{
+    &-info{
       transform: translateX(0);
       &:before{
         transform: translateX(-105%);
@@ -95,7 +97,7 @@
 @media (min-width: 48em) {
   .swiper-full{
     &__text{
-      &_info{
+      &-info{
         max-width: 75%;
         bottom: 0;
         right: 0;
@@ -124,7 +126,7 @@
       &_head{
 
       }
-      &_info{
+      &-info{
         width: 100%;
         bottom: 4.8rem;
         padding-left: 2.5rem;

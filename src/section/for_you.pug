@@ -1,0 +1,61 @@
+-
+    let forYou = [
+        {
+            'src': './img/home/for-you/svg/for-you-1.svg',
+            'title': 'Лучшие варианты',
+            'info': 'Лучшие варианты кухонных гарнитуров из возможных на рынке',
+        },
+        {
+            'src': './img/home/for-you/svg/for-you-2.svg',
+            'title': 'Cоблюдение сроков',
+            'info': 'Неукоснительное соблюдение сроков',
+        },
+        {
+            'src': './img/home/for-you/svg/for-you-3.svg',
+            'title': 'Персональный консультант',
+            'info': 'Помощь персонального консультанта',
+        },
+        {
+            'src': './img/home/for-you/svg/for-you-4.svg',
+            'title': 'Антикризисные предложения',
+            'info': 'Антикризисные предложения',
+        },
+        {
+            'src': './img/home/for-you/svg/for-you-5.svg',
+            'title': 'Поддержка на каждом этапе',
+            'info': 'Поддержка на каждом этапе ремонта',
+        },
+        {
+            'src': './img/home/for-you/svg/for-you-6.svg',
+            'title': 'Выполнение всех обязательств',
+            'info': 'Точное выполнение всех принятых обязательств',
+        },
+    ];
+
+section.for-you.is-mobile
+    .container
+        .title
+            h2.title__section
+                span Для Вас:
+        .cards2
+            each item in forYou
+                .card2
+                    .card2__img
+                        img(src=item.src alt=item.info)
+                    .card2__title !{item.title}
+
+section.for-you.is-desktop
+    .container
+        .title
+            h2.title__section
+                span Для Вас:
+        .direction-aware
+            ul
+                each item in forYou
+                    li
+                        .direction-aware__front.normal
+                            .direction-aware__img
+                                img(src=item.src alt=item.info)
+                            .direction-aware__title !{item.title}
+
+                        .direction-aware__info.info !{item.info}
