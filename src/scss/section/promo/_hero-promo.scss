@@ -50,4 +50,29 @@
     &__btn-wrapper{
         width: 41.8rem;
     }
+
+    &__choose-us{
+        display: flex;
+        justify-content:space-between;
+        
+        .item{
+            display: flex;
+            align-items:center;
+            .num{
+                color: #6D0F0F;
+                font-size: 4.8rem;
+                font-weight: 700;
+                line-height: 150%;
+                letter-spacing: .144rem;
+                padding-right: 1.5rem;
+            }
+            .text{
+                font-size: 1.4rem;
+                letter-spacing: 0.42px;
+                span{
+                    display: block;
+                }
+            }
+        }
+    }
 }

@@ -42,9 +42,12 @@ section.hero-promo
             .hero-promo__btn-wrapper
                 a(href="#" class="button__crooked") Записаться на визит в Шоу-рум
         .hero-promo__choose-us
-            .item
-                .num 13645
-                .text Довольных клиентов
+            each item in chooseUs
+                .item
+                    .num !{item.num}
+                    .text
+                        span !{item.text}
+                        span !{item.text2}
 
 
 
