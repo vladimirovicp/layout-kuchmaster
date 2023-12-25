@@ -1,9 +1,47 @@
+-
+    //- let recommendedInfo = [
+    //-     {
+    //-         "title" : "Гарантия на фурнитуру",
+    //-         "text": [
+    //-             { 
+    //-                 "text" : "эконом-класса — ",
+    //-                 "textBold" : "5 лет,",
+                    
+
+    //-             },
+    //-             { "комфорт класса — 15 лет."}
+    //-             , , "При выявлении недостатка, устраняем его за счет компании в течение всего гарантийного срока"]
+    //-     }
+    //- ];
+
 section.recommended
-    .hero-promo__bg
-        picture
-            img(src=require(`../../img/promo/recommended/bg.jpg`) alt="Кухня кухмастер Саратов") 
+    //- .hero-promo__bg
+        //- picture
+        //-     img(src=require(`../../img/promo/recommended/bg.jpg`) alt="Кухня кухмастер Саратов") 
     .container
         .title
             h2.title__section
-                span 90 % 
+                span.color__red 90 % 
                 |клиентов
+                span.title__section-slogan приходят по рекомендации
+        
+        .cards3
+            .card3
+                .wrapper
+                    .card3__title Гарантия на фурнитуру
+                    .card2__text эконом-класса — 
+                        strong 5 лет
+                        |,
+
+
+            //- each item in recommendedInfo
+            //-     .card3
+            //-         .wrapper
+            //-             .card3__title !{item.title}
+            //-             .card2__text
+            //-                 each textItem in text
+            //-                     p !{textItem}
+
+        
+
+            
