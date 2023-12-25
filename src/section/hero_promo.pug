@@ -26,9 +26,9 @@
 section.hero-promo
     .hero-promo__bg
         picture
-            source(srcset=require(`../img/promo/hero/bg.avif`) type="image/avif")
-            source(srcset=require(`../img/promo/hero/bg.webp`) type="image/webp")
-            img(src=require(`../img/promo/hero/bg.jpg`) alt="Кухня кухмастер Саратов") 
+            source(srcset=require(`../img/promo/hero/bg-desktop.avif`) type="image/avif")
+            source(srcset=require(`../img/promo/hero/bg-desktop.webp`) type="image/webp")
+            img(src=require(`../img/promo/hero/bg-desktop.jpg`) alt="Кухня кухмастер Саратов") 
     .container
         .hero-promo__title
             span Комфортные кухни 
@@ -40,7 +40,7 @@ section.hero-promo
             .hero-promo__btn-wrapper
                 a(href="#" class="button__crooked") Получить консультацию
             .hero-promo__btn-wrapper
-                a(href="#" class="button__crooked") Записаться на визит в Шоу-рум
+                a(href="#" class="button__crooked-white") Записаться на визит в Шоу-рум
         .hero-promo__choose-us
             each item in chooseUs
                 .item

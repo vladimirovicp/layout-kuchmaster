@@ -13,6 +13,26 @@
     text-align: center;
     transition: background-color .5s, border-radius .5s;
   }
+
+  &__crooked-white{
+    position: relative;
+    background-color: rgba(255, 252, 252, 0.65);
+    padding: 1.4rem 3.4rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.03rem;
+    color: #3D4141;
+    display: block;
+    border-radius: 4.2rem .5rem 4.2rem .5rem;
+    border: .3rem solid #3D4141;
+    text-align: center;
+    transition: background-color .5s, border-radius .5s;
+  }
+
+
+
+
 }
 
 input.button{
