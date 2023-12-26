@@ -1,23 +1,29 @@
 -
-    //- let recommendedInfo = [
-    //-     {
-    //-         "title" : "Гарантия на фурнитуру",
-    //-         "text": [
-    //-             { 
-    //-                 "text" : "эконом-класса — ",
-    //-                 "textBold" : "5 лет,",
-                    
-
-    //-             },
-    //-             { "комфорт класса — 15 лет."}
-    //-             , , "При выявлении недостатка, устраняем его за счет компании в течение всего гарантийного срока"]
-    //-     }
-    //- ];
+    let recommendedInfo = [
+        {
+            "title" : "Надежная компания ",
+            "text": "— работаем на одном месте в собственном салоне более 15 лет"
+        },
+        {
+            "title" : "Индивидуальная помощь ",
+            "text": "заказчикам в подборе кухонного оборудования и техники: подберем на выгодных условиях среди наших партнеров и порекомендуем варианты на маркетплейсах"
+        },
+        {
+            "title" : "Сборка и установка за 1 день ",
+            "text": "штатными сборщиками, аккуратно и быстро, сразу убираем всю упаковку и наводим чистоту своим профессиональным пылесосом"
+        },
+        {
+            "title" : "Любой нестандарт без переплаты: ",
+            "text": " учтем любые нервности и выступы, делаем выпилы любой сложности"
+        }
+    ];
 
 section.recommended
-    //- .hero-promo__bg
-        //- picture
-        //-     img(src=require(`../../img/promo/recommended/bg.jpg`) alt="Кухня кухмастер Саратов") 
+    .recommended__bg
+        picture
+            source(srcset=require(`../../img/promo/recommended/bg.avif`) type="image/avif")
+            source(srcset=require(`../../img/promo/recommended/bg.webp`) type="image/webp")
+            img(src=require(`../../img/promo/recommended/bg.jpg`) alt="Кухня кухмастер Саратов") 
     .container
         .title
             h2.title__section
@@ -25,22 +31,30 @@ section.recommended
                 |клиентов
                 span.title__section-slogan приходят по рекомендации
         
-        .cards3
-            .card3
+        .recommended__cards
+            .recommended__card
                 .wrapper
-                    .card3__title Гарантия на фурнитуру
-                    .card2__text эконом-класса — 
-                        strong 5 лет
-                        |,
+                    .recommended__card-title Гарантия на фурнитуру
+                    .recommended__card-text 
+                        p эконом-класса — 
+                            strong 5 лет
+                            |,
+                        p комфорт класса — 
+                            strong 5 лет
+                            |.
+                        p При выявлении недостатка, устраняем его за счет компании в течение всего гарантийного срока
+            .recommended__card
+                .wrapper
+                    .recommended__card-title Помощь клиентам в ремонте кухни:
+                    .recommended__card-text предоставляем схемы размещения розеток и коммуникаций, делаем контрольные замеры в течение ремонта по просьбе заказчиком
 
 
-            //- each item in recommendedInfo
-            //-     .card3
-            //-         .wrapper
-            //-             .card3__title !{item.title}
-            //-             .card2__text
-            //-                 each textItem in text
-            //-                     p !{textItem}
+
+            each item in recommendedInfo
+                .recommended__card
+                    .wrapper
+                        .recommended__card-title.inline !{item.title}
+                        .recommended__card-text.inline !{item.text}
 
         
 

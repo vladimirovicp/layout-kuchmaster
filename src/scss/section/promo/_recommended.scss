@@ -1,3 +1,62 @@
 .recommended{
-    
+    position: relative;
+    .container{
+        position: relative;
+    }
+
+    &__bg{
+        position: absolute;
+        height: 100%;
+        max-width: 144rem;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    &__card{
+        //display: flex;
+        width: 64.5rem;
+        border: 0.4rem solid #FDD7D7;
+        padding: 1rem;
+        border-radius: .4rem;
+        background-color: #FFF6F6;
+
+        &-title{
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: 0.54px;
+
+            &.inline{
+                display: inline;
+            }
+        }
+
+        &-text{
+            font-size: 1.8rem;
+            font-weight: normal;
+            line-height: 1.5;
+            letter-spacing: 0.54px;
+            p{
+                margin: 0;
+            }
+            &.inline{
+                display: inline;
+            }
+        }
+    }
+
+    .wrapper{
+        display: block;
+        width: 50rem;
+        padding: 1.5rem 3rem;
+    }
 }
