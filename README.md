@@ -2,7 +2,7 @@
 
 [Link to layout](https://vladimirovicp.github.io/layout-kuchmaster/)
 
-> * node js 14.7.5
+> * node js v18.19.0
 
 ## svg sprit
 > * https://icomoon.io/
