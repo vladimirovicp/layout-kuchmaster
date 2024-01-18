@@ -1,22 +1,37 @@
 const casesWrapper = document.querySelector('.cases__wrapper ')
+let curr = 0
 if (casesWrapper) {
-    const casesMode = document.querySelectorAll('.case__mode'), casesTab = document.querySelectorAll('.cases__tab')
+    const casesMode = document.querySelectorAll('.case__mode'), casesTab = document.querySelectorAll('.cases__tab'),
+          casesMore = document.querySelector('.cases__more')
 
-    casesMode[0].classList.add('active')
-    casesTab[0].classList.add('active')
+    changeTab(casesTab, casesMode)
 
     casesMode.forEach((mode, index) => {
         mode.addEventListener('click', e => {
             e.preventDefault()
-            changeTab(index, casesTab, casesMode)
+            curr = index
+            changeTab(casesTab, casesMode)
+            casesMore.textContent = 'Ещё проекты'
         })
+    })
+
+    casesMore.addEventListener('click', e => {
+        e.preventDefault()
+        loadMore(casesMore)
     })
 }
 
 
-function changeTab(tabNum, tabs, modes) {
+function changeTab(tabs, modes) {
+    casesWrapper.classList.remove('full')
     tabs.forEach(tab => { tab.classList.remove('active') })
     modes.forEach(tab => { tab.classList.remove('active') })
-    tabs[tabNum].classList.add('active')
-    modes[tabNum].classList.add('active')
+    tabs[curr].classList.add('active')
+    modes[curr].classList.add('active')
+    
 }
+
+function loadMore(btn) {
+    casesWrapper.classList.toggle('full')
+    casesWrapper.classList.contains('full') ? btn.textContent = 'Скрыть' : btn.textContent = 'Ещё проекты'
+} 
