@@ -98,11 +98,22 @@
         ]
     ]   
 
+
+- const kitchens = ['Прямые', 'Угловые', 'С островком', 'П-образные']
+
 .cases
     .container
         .title
             h2.title__section Кухни, изготовленные для наших клиентов
-        .cases__wrapper
+                .cases__desc За 20 лет произвели более 13000 кухонь
+    .cases__switcher
+        each kitchen, index in kitchens
+            if index == 0
+                button(type='button').case__mode.active= kitchen
+            else 
+                button(type='button').case__mode= kitchen
+    .container
+        .cases__wrapper 
             each tab in tabs
                 .cases__tab 
                     each item, index in tab

@@ -1,0 +1,16 @@
+<svg viewBox="0 0 16 32"   fill="none" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+  <view viewBox="0 0 16 16" display="none" xmlns="http://www.w3.org/2000/svg" id="calendar"/>
+  <g id="calendar"><path d="M0.644531 0.306274H15.6949V15.2257H0.644531V0.306274Z" fill="white" fill-opacity="0.01"/>
+  <path d="M2.21094 6.21216H14.1258V12.7394C14.1258 13.0828 13.845 13.3611 13.4987 13.3611H2.83803C2.4917 13.3611 2.21094 13.0828 2.21094 12.7394V6.21216Z" stroke="#CB2E29" stroke-width="1.25419" stroke-linejoin="round"/>
+  <path d="M2.21094 3.10394C2.21094 2.76062 2.4917 2.4823 2.83803 2.4823H13.4987C13.845 2.4823 14.1258 2.76062 14.1258 3.10394V6.21216H2.21094V3.10394Z" stroke="#CB2E29" stroke-width="1.25419" stroke-linejoin="round"/>
+  <path d="M5.66016 1.5498V4.03638" stroke="#CB2E29" stroke-width="1.25419" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M10.6758 1.5498V4.03638" stroke="#CB2E29" stroke-width="1.25419" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9.42188 10.8745H11.3032" stroke="#CB2E29" stroke-width="1.25419" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5.03125 10.8745H6.91254" stroke="#CB2E29" stroke-width="1.25419" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9.42188 8.38794H11.3032" stroke="#CB2E29" stroke-width="1.25419" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5.03125 8.38794H6.91254" stroke="#CB2E29" stroke-width="1.25419" stroke-linecap="round" stroke-linejoin="round"/></g>
+
+  <view viewBox="0 16 16 16" xmlns="http://www.w3.org/2000/svg" id="clock" />
+  <g id="clock"><g transform="translate(0,16)"><path d="M7.89626 0.306274C3.75742 0.306274 0.371094 3.66315 0.371094 7.766C0.371094 11.8689 3.75742 15.2257 7.89626 15.2257C12.0351 15.2257 15.4214 11.8689 15.4214 7.766C15.4214 3.66315 12.0351 0.306274 7.89626 0.306274ZM7.89626 2.17121C11.0192 2.17121 13.5401 4.67021 13.5401 7.766C13.5401 10.8618 11.0192 13.3608 7.89626 13.3608C4.77331 13.3608 2.25238 10.8618 2.25238 7.766C2.25238 4.67021 4.77331 2.17121 7.89626 2.17121ZM6.95561 4.03614V8.17629L7.25662 8.41873L8.19726 9.35119L8.8369 10.0599L10.1914 8.71712L9.47654 8.08304L8.8369 7.44896V4.07344H6.95561V4.03614Z" fill="#CB2E29"/></g></g>
+
+</svg>
