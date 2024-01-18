@@ -10,5 +10,6 @@ import '../js/direction-aware';
 import './rutube_video';
 
 
+import './cases';
 
 
