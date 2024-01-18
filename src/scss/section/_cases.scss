@@ -6,7 +6,8 @@
         justify-content: center;
         position: absolute;
         transform: scale(0);
-       // transition: all 0.2s ease;
+
+        // transition: all 0.2s ease;
         &.active {
             transition: all 0.5s ease-in-out;
             transform: scale(1);
@@ -40,6 +41,7 @@
 .case {
     max-width: 43rem;
     height: 29rem;
+
     &__img {
         max-width: inherit;
         height: inherit;
@@ -57,7 +59,8 @@
         border-top: 0.125rem solid #CB2E29;
         color: #6D0F0F;
         height: 5rem;
-        > * {
+
+        >* {
             margin: 0;
             font-weight: 600;
             display: flex;
@@ -69,6 +72,7 @@
         font-size: 1.4rem;
         line-height: 150%;
         transition: all 0.2s ease;
+
         &::after {
             content: '';
             display: block;
@@ -76,12 +80,14 @@
             border: 0.2rem solid transparent;
             transition: all 0.2s ease;
         }
+
         &.active {
             color: #5A2E2E;
             font-weight: 600;
             display: flex;
             flex-direction: column;
             align-items: center;
+
             &::after {
                 content: '';
                 display: block;
@@ -91,16 +97,19 @@
         }
     }
 
-    &__term, &__date {
+    &__term,
+    &__date {
         display: flex;
         gap: 1rem;
+
         &::before {
             display: block;
             width: 2rem;
             height: 2rem;
-            
+
         }
     }
+
     &__term {
         &::before {
             content: url(../img/svg/sprite-view.svg#calendar);
@@ -113,8 +122,17 @@
             content: url(../img/svg/sprite-view.svg#clock);
         }
     }
-    
+
     &__price {
         color: #CB2E29;
+    }
+}
+
+
+@media (max-width: 48em) {
+    .cases {
+        &__tab {
+            flex-direction: column;
+        }
     }
 }
