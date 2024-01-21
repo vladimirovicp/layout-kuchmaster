@@ -8,8 +8,6 @@ import './burger'
 import '../js/swiper-setting';
 import '../js/direction-aware';
 import './rutube_video';
-
+import '../js/reviews';
 
 import './cases';
-
-

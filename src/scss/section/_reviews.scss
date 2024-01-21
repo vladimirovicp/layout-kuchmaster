@@ -1,117 +1,159 @@
-.reviews {
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.reviews{
+  margin-bottom: 15rem;
 
-  .swiper{
-    padding-bottom: 2.5rem;
+  button{
+    margin: 0 auto;
   }
 
-  &__slide {
-    position: relative;
+ 
+  &__wrap{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    opacity: .3;
-    height: 52rem;
+    gap: 6rem;
+    margin-bottom: 5.3rem;
 
-    border: 0.5rem solid #FDD7D7;
-    padding: 3.5rem;
-    border-radius: .4rem;
-    background-color: #FFF6F6;
-
-
-    &.swiper-slide-active {
-      opacity: 1;
+    
+  }
+  &__col{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &:nth-child(n + 4){
+      display: none;
     }
   }
-  &__date {
-    position: absolute;
-    top: 1.4rem;
-    right: 1.1rem;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $color2;
+
+  &__media{
+    width: 40.5rem;
+    height: 24.7rem;
+    position: relative;
+    cursor: pointer;
   }
-  &__avatar {
+  &__logo{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 8rem;
+    height: 8rem;
+  }
+  &__avatar{
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     margin-bottom: 2rem;
     overflow: hidden;
+    position: absolute;
+    left: 38rem;
+    top: -3rem;
+  }
+  &__container{
+    width: 87.7rem;
+    border-radius: .5rem;
+    border: .4rem solid #FDD7D7;
+    background: #FFFCFC;
+    padding: 3rem 6.7rem 3rem 6.5rem;
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   &__title {
-    font-size: 2.4rem;
-    color: $color2;
-    font-weight: 700;
+    font-size: 1.8rem;
+    color: $color10;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  &__subtitle{
+    color: $color10;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 1rem;
+  }
+  &__date {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: $color10;
     margin-bottom: 2rem;
   }
   &__text {
-    font-size: 1.8rem;
-    color: $color2;
-
     overflow: hidden;
     text-overflow: ellipsis;
     display: -moz-box;
     display: -webkit-box;
-    line-clamp: 12;
+    line-clamp: 4;
     box-orient: vertical;
     -moz-box-orient: vertical;
-    -webkit-line-clamp: 12;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-  }
-
-  &__slider {
-    .slider__arrow-prev {
-      left: 40rem;
-    }
-    .slider__arrow-next {
-      right: 40rem;
-    }
-  }
-
-  &__pagination {
-    &.swiper-pagination-horizontal {
-      position: relative;
-      padding: 2rem 0 5rem;
-    }
-    .swiper-pagination-bullet {
-
-      width: 2.2rem;
-      height: .5rem;
-      border-radius: 0%;
-      background: $color1;
-    }
-    .swiper-pagination-bullet-active {
-      width: 7rem;
-      background: $color2;
-    }
+    color: $color10;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.54px;
   }
 }
-
 @media (max-width: 48em) {
   .reviews {
     padding: 5rem 3rem;
-    &__slider {
-      .slider__arrow-prev,
-      .slider__arrow-next {
-        display: none;
-      }
-    }
 
-    &__slide{
-      height: 72rem;
+    &__col{
+      flex-direction: column;
+      gap: 3rem;
+    }
+    &__header{
+      flex-direction: column;
     }
     &__title{
       font-size: 3.2rem;
-
+    }
+    &__info{
+      display: flex;
+      padding-left: 13rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      flex-direction: column;
+    }
+    &__icon{
+      .social{
+        justify-content: space-around;
+      }
+    }
+    &__container{
+      width: 100%;
+      padding: 2.5rem;
+    }
+    &__avatar{
+      left: 3rem;
+      top: 40.5rem;
+    }
+    &__wrap{
+      gap: 10rem;
+    }
+    &__logo{
+      top: 40%;
+      left: 44%;
+    }
+    &__subtitle{
+      margin-top: 4rem;
+      font-size: 2.8rem;
+    }
+    &__date{
+      font-size: 2.8rem;
+    }
+    &__media{
+      width: 100%;
+      height: 35.7rem;
     }
     &__text {
       font-size: 3.2rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-
+      line-clamp: 20;
+      text-align: justify;
+      box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-line-clamp: 20;
+      -webkit-box-orient: vertical;
     }
   }
 }

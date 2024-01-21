@@ -1,59 +1,120 @@
 -
+    const social = [
+        {
+            'href': 'viber://chat?number=%2B79873760788',
+            'name': 'Viber',
+            'class': 'viber'
+        },
+        {
+            'href': 'https://wa.me/+79873760788',
+            'name': 'Whatsapp',
+            'class': 'whatsapp'
+        },
+        {
+            'href': 'https://vk.com/kuhmaste_r',
+            'name': 'ВКонтакте',
+            'class': 'vk'
+        },
+        {
+            'href': '#',
+            'name': 'Телеграм',
+            'class': 'telegram'
+        },
+        {
+            'href': 'https://ok.ru/group/57317203247128',
+            'name': 'Одноклассники',
+            'class': 'ok'
+        },
+    ];
     let reviewsFront = [
         {
             'date': '10.10.2021',
-            'src':'./img/reviews/reviews-photo.svg',
+            'src':'./img/reviews/woman.svg',
+            'media': './img/reviews/photo.png',
             'alt': 'review',
-            'title': 'Автор???',
-            'text': 'В 2018 году мы купили квартиру от застройщика и 2 года ждали, когда её сдадут в эксплуатацию. Всё это время я придумывала дизайн нашего жилья. Конечно же, любой квартиры это кухня. Поэтому планировала я её очень тщательно.'
+            'logo': './img/reviews/play.png',
+            'title': 'Виктория Баринова',
+            'subtitle': 'Быстро, качественно, красиво! Очень довольна', 
+            'text': 'Огромная благодарность директору, ребятам кто устанавливал кухню, всё выполнено качественно, быстро, аккуратно. Люди, слушайте Советы директора компании и ставьте сразу ручки, а не путём нажатия открытие шкафов, кухни только в Кухмастере зазывайте! Будете довольны!'
         },
         {
             'date': '10.10.2021',
-            'src': './img/reviews/reviews-photo.svg',
+            'src':'./img/reviews/man.svg',
+            'media': './img/reviews/photo.png',
+            'logo': './img/reviews/play.png',
             'alt': 'review',
-            'title': 'Алена',
-            'text': 'Заказывали кухню в Кухмастере. Людмила Геннадьевна нам все подсказала, рассчитала, несколько раз приезжал дизайнер. кухня оч.маленькая, поэтому всем коллективом искали нам подходящий проект. Доставку осуществили точно в установленное время, парни все занесли, поставили. Работали аккуратно, собрали все без замечаний. Спасибо вам! Будем пользоваться вашей кухней и с благодарностью вспоминать вас.'
+            'title': 'Виктор Баринов',
+            'subtitle': 'Быстро, качественно, красиво! Очень довольна', 
+            'text': 'Огромная благодарность директору, ребятам кто устанавливал кухню, всё выполнено качественно, быстро, аккуратно. Люди, слушайте Советы директора компании и ставьте сразу ручки, а не путём нажатия открытие шкафов, кухни только в Кухмастере зазывайте! Будете довольны!'
         },
         {
             'date': '10.10.2021',
-            'src': './img/reviews/reviews-photo.svg',
+            'src':'./img/reviews/man.svg',
+            'media': './img/reviews/photo.png',
+            'logo': './img/reviews/play.png',
             'alt': 'review',
-            'title': 'Автор??? 2',
-            'text': 'Как как у нас квартира-студия, проект требовался нестандартный: функциональный, не громоздкий и с наличием барной стойки.'
+            'title': 'Виктор Баринов',
+            'subtitle': 'Быстро, качественно, красиво! Очень довольна', 
+            'text': 'Огромная благодарность директору, ребятам кто устанавливал кухню, всё выполнено качественно, быстро, аккуратно. Люди, слушайте Советы директора компании и ставьте сразу ручки, а не путём нажатия открытие шкафов, кухни только в Кухмастере зазывайте! Будете довольны!'
         },
         {
             'date': '10.10.2021',
-            'src': './img/reviews/reviews-photo.svg',
+            'src':'./img/reviews/man.svg',
+            'media': './img/reviews/photo.png',
+            'logo': './img/reviews/play.png',
             'alt': 'review',
-            'title': 'Татьяна',
-            'text': 'Искала долго кухню по бюджету, решилась вызвать замерщика и заказала. Замерщика быстро и чётко все замерил и расписал. Доставили в срок. Собрали очень хорошо, при том что ровных стен не было(дом старый), собирали 2 дня, смотрится супер. Есть некоторые мелочи, но цена и качество на уровне. Все очень довольны.'
+            'title': 'Виктор Баринов',
+            'subtitle': 'Быстро, качественно, красиво! Очень довольна', 
+            'text': 'Огромная благодарность директору, ребятам кто устанавливал кухню, всё выполнено качественно, быстро, аккуратно. Люди, слушайте Советы директора компании и ставьте сразу ручки, а не путём нажатия открытие шкафов, кухни только в Кухмастере зазывайте! Будете довольны!'
         },
         {
             'date': '10.10.2021',
-            'src': './img/reviews/reviews-photo.svg',
+            'src':'./img/reviews/man.svg',
+            'media': './img/reviews/photo.png',
+            'logo': './img/reviews/play.png',
             'alt': 'review',
-            'title': 'Захватова Лидия',
-            'text': 'Добрый день ! Даже не могла представить, что мне так понравится моя новая кухня. Спасибо огромное дизайнеру Анечке, очень внимательному человеку. Также спасибо ребятам сборщикам, делают как для себя, придраться не к чему, никаких перекуров, все очень профессионально и четко. Понравилось всё до мелочей. Спасибо "Кухмастер"'
+            'title': 'Виктор Баринов',
+            'subtitle': 'Быстро, качественно, красиво! Очень довольна', 
+            'text': 'Огромная благодарность директору, ребятам кто устанавливал кухню, всё выполнено качественно, быстро, аккуратно. Люди, слушайте Советы директора компании и ставьте сразу ручки, а не путём нажатия открытие шкафов, кухни только в Кухмастере зазывайте! Будете довольны!'
         },
     ];
 
 .reviews
     .container
-        .title
-            h2.title__section Отзывы о нас
-        .reviews__slider.swiper
-            .swiper-wrapper
-                each item in reviewsFront
-                    .reviews__slide.swiper-slide
-                        .reviews__date !{item.date}
+        .title.title-center
+            h2.title__section.title__section_subtitle Отзывы наших довольных клиентов
+                div.cases__desc Реальные отзывы с видео ответами
+        .reviews__wrap
+            each item in reviewsFront
+                .reviews__col
+                    .reviews__media 
+                        picture 
+                            img(src=item.media alt=item.alt)
+                        .reviews__logo 
+                            picture 
+                                img(src=item.logo alt=item.alt)
+                    .reviews__container
                         .reviews__avatar
                             picture
                                 img(src=item.src alt=item.alt)
-                        .reviews__title !{item.title}
+                        .reviews__header 
+                            .reviews__info
+                                .reviews__title !{item.title}
+                                .reviews__date Дата установки: !{item.date}
+                            .reviews__icon 
+                                ul.social
+                                    each soc in social
+                                        li.social__item
+                                            a(href=soc.href class="social__link " + soc.class target="_blank" rel="noopener")
+                                                span(class="social__tooltip") !{soc.name}
+                                                if modificator
+                                                    span(class="social__ico " + modificator)
+                                                        +main-svg('', './img/svg/sprite.svg#' + soc.class)
+                                                else
+                                                    span.social__ico
+                                                        +main-svg('', './img/svg/sprite.svg#' + soc.class)
+                        .reviews__subtitle !{item.subtitle}
                         .reviews__text !{item.text}
-            .swiper-button-prev.reviews__arrow-prev.slider__arrow-prev
-            .swiper-button-next.reviews__arrow-next.slider__arrow-next
-        .swiper-pagination.reviews__pagination
-        a(href="#" class="button__crooked") Смотреть все отзывы
+        button.button__crooked#button-reviews Еще отзывы
 
 
