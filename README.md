@@ -2,10 +2,9 @@
 
 [Link to layout](https://vladimirovicp.github.io/layout-kuchmaster/)
 
-> * node js v18.19.0
+> - node js v22.4.0
 
 ## svg sprit
-> * https://icomoon.io/
-> * https://svgsprit.es
-> 
->
+
+> - https://icomoon.io/
+> - https://svgsprit.es

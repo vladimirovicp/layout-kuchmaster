@@ -1,5 +1,5 @@
-import Swiper from 'swiper/swiper-bundle.esm.js';
-
+// import Swiper from 'swiper/swiper-bundle.esm.js';
+import Swiper from 'swiper';
 const swiperFull  = new Swiper('.swiper-full', {
     spaceBetween: 10,
     navigation: {

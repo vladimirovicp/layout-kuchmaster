@@ -1,12 +1,8 @@
-//@import "mixins";
-
-
 @import "abstracts/variable";
 @import "abstracts/mixins";
 
 @import "global";
 
-//@import "mixins";
 @import "vendor";
 @import "set";
 
@@ -16,20 +12,17 @@
 @import "header";
 @import "menu";
 
-
 @import "components/swiper";
 @import "components/swiper-full";
-
 
 @import "components/card";
 @import "components/wrapper";
 @import "components/title";
-@import "components/direction-aware";  //Direction-aware hover effect - Эффект зависания с учетом направления
+@import "components/direction-aware"; //Direction-aware hover effect - Эффект зависания с учетом направления
 @import "components/button";
 @import "components/field";
 @import "components/youtube-video";
 @import "components/vimeo-video";
-
 
 @import "section/hero";
 @import "section/for-you";
@@ -44,8 +37,4 @@
 
 @import "page/about";
 
-
-
 @import "footer";
-
-
