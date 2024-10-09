@@ -1,6 +1,8 @@
 // import Swiper from 'swiper/swiper-bundle.esm.js';
 import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 const swiperFull  = new Swiper('.swiper-full', {
+    modules: [Navigation, Pagination],
     spaceBetween: 10,
     navigation: {
         nextEl: '.swiper-full__arrow-next',

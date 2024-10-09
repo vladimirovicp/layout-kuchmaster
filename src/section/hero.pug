@@ -63,7 +63,7 @@ section.hero
                         .swiper-full__text-info
                             p !{slide.textInfo}
                             a(href=slide.textInfoBtn.href class="button__crooked") !{slide.textInfoBtn.text}
-                    .swiper-full__video
+                    .swiper-full__background
                         if (slide.video !== undefined)
                             video(autoplay loop muted)
                                 source(src=slide.video.src type="video/mp4")
