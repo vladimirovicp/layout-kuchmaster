@@ -1,0 +1,9 @@
+.img-back {
+    &__family {
+        &:before {
+            height: 17.1rem;
+            background-image: url("../img/svg/section/family.svg");
+        }
+
+    }
+}

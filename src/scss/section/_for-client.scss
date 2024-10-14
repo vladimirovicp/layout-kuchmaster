@@ -62,6 +62,23 @@
   }
 }
 
+.for-client__about{
+  .wrapper{
+    justify-content: start;
+  }
+
+  .title__section{
+    text-align: left;
+  }
+
+  .for-client{
+    &__text{
+      width: 86.6rem;
+    }
+  }
+
+}
+
 @media (max-width: 48em) {
   .for-client{
     padding-bottom: 18.8rem;
@@ -115,6 +132,12 @@
   .for-client{
     &__text{
       text-align: justify;
+    }
+
+    &__about{
+      .for-client__text {
+        text-align: left;
+      }
     }
   }
 }

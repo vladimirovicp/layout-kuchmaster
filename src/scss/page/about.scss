@@ -27,5 +27,15 @@
 
   }
 
+  &__video-info{
+    padding: 5rem 0;
+
+    .card3{
+      flex-direction: column;
+      background-color: transparent;
+      border: transparent;
+    }
+  }
+
   
 }
