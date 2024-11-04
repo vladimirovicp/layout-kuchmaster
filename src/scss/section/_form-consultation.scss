@@ -3,16 +3,16 @@
   background-color: $color9;
   position: relative;
 
-  &:before{
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -3rem;
-    width: 100%;
-    height: 7.8rem;
-    background: url("../img/svg/section/petal.svg") no-repeat top center;
-    background-size: contain;
-  }
+  // &:before{
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   bottom: -3rem;
+  //   width: 100%;
+  //   height: 7.8rem;
+  //   background: url("../img/svg/section/petal.svg") no-repeat top center;
+  //   background-size: contain;
+  // }
 
   &__items{
     display: flex;

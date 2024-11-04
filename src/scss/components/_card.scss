@@ -26,6 +26,14 @@
     justify-content: center;
   }
 
+  &__wrapper-center{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8.5rem;
+  }
+
   &__img{
     text-align: center;
     margin-bottom: 2rem;
@@ -135,6 +143,14 @@
 
     &__text{
       font-size: 3.2rem;
+    }
+
+    &__wrapper-center{
+      height: auto;
+      display: block;
+      padding: 2rem 0 0;
+      justify-content: unset;
+      align-items: unset;
     }
   }
 
