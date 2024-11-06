@@ -20,6 +20,12 @@
   border-radius: .4rem;
   background-color: $color3;
 
+  &.card2__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__v-centered{
     display: flex;
     flex-direction: column;
@@ -76,6 +82,10 @@
     font-size: 1.8rem;
     color: $color2;
     margin-top: 2rem;
+  }
+
+  &__footer{
+    
   }
 }
 
