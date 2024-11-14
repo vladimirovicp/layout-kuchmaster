@@ -52,6 +52,14 @@ module.exports = {
         }),
 
         new HTMLWebpackPlugin({
+            template:  path.resolve(__dirname, 'src/page/nashi-kuhni.pug'),
+            filename: "nashi-kuhni.html",
+        }),
+
+
+        
+
+        new HTMLWebpackPlugin({
             template:  path.resolve(__dirname, 'src/page/test.pug'),
             filename: "test.html",
         }),

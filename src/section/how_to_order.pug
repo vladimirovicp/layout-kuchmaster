@@ -2,7 +2,8 @@
     let order = [
         {
             'title': 'Оставьте заявку',
-            'text': 'любым удобным для вас способом: WhatsApp. Viber',
+            'text': 'любым удобным для вас способом: WhatsApp, Viber, Telegram или нажмите на кнопку ниже',
+            'btnCenter': 'Оставьте заявку',
             'src':'./img/home/how-to-order/svg/how-to-order-1.svg',
             'alt': 'Оставьте заявку'
         },
@@ -29,5 +30,8 @@
                 .card2.card2__img-bottom
                     .card2__title !{item.title}
                     .card2__text !{item.text}
+                    if item.btnCenter
+                        .card2__wrapper-center
+                            a.button__crooked(href="#") Оставьте заявку
                     .card2__img_bottom
                         img(src=item.src alt=item.alt)

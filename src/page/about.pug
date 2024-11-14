@@ -8,41 +8,132 @@ block content
     main
         include ../section/about/about-front
 
-        section
-            .youtube_video
-                .video-block__youtube
-                    .video-block__inner
+        section.about__video-info
+            .container
+                .cards3
+                    .card3
+                        div.title__left История компании
                         picture
-                            source(srcset="https://img.youtube.com/vi_webp/k0ZqNL56n_E/maxresdefault.webp" type="image/webp")
-                            img(class="video-block__content" src="https://img.youtube.com/vi/k0ZqNL56n_E/maxresdefault.jpg" alt="")
+                            img(src='./img/page/about/video-info/company-history.jpg' alt='История компании')
+                    .card3
+                        h2.title__left О производстве
+                        picture
+                            img(src='./img/page/about/video-info/production.jpg' alt='О производстве')
+        
+        section.for-client.for-client__about.for-client_white.section__icon-bottom.section__icon-bottom_family
+            .container
+                .wrapper
+                    .for-client__text
+                        .title
+                            h2.title__section.title__section_indent-sm Зачем вам идти в "Кухмастер"?
+                        ul.for-client__list
+                            li За 20 лет безупречной работы в Саратове мы создали репутацию надежного поставщика красивой добротной кухонной мебели
+                            li Каждый клиент получает статус VIP: вам будет предоставлен персональный менеджер вне зависимости от стоимости вашей кухни. Ведение вашего проекта одним человеком застрахует вас от ошибок и “непоняток”
+                            li И корпуса, и фасады изготавливает одна и та же фабрика. Это позволяет встроить кухню точно по размеру вашего помещения, без щелей и зазоров. И без переплаты за нестандарт и эксклюзивный дизайн
+                            li Постгарантийный сервис в течение 15 лет даст вам возможность обновить фасады, поменять столешницу хоть через 8-10 лет. Вы всегда можете рассчитывать на нашу помощь по любым вопросам, связанным с эксплуатацией кухонной мебели
+                            li Наши сборщики устанавливают наши кухни 15 лет, это мастера, на которых можно положиться - сделают быстро и аккуратно. Вы сэкономите свое время: доставка и монтаж производятся за один день. В 10 утра ребята начинают работать, а к 18 часам у вас уже красуется новенькая мебель!
+                            li Работаем без выходных: заказать кухню, сделать замер и установить ее можно и в субботу, и в воскресенье. Вам не нужно отпрашиваться с работы!
+        section.principle
+            .container
+                h2.title Три главных принципа характеризуют нашу работу:
+                .principle__wrapper
+                    .principle__item.principle__one
+                        .principle__item-img
+                            <img src="./img/page/about/principle/reliability.svg" alt="надежность">  
+                        .principle__item-title надежность
+                    .principle__item.principle__two
+                        .principle__item-img
+                            <img src="./img/page/about/principle/honesty.svg" alt="честность">  
+                        .principle__item-title честность
+                    .principle__item.principle__three
+                        .principle__item-img
+                            <img src="./img/page/about/principle/quality.svg" alt="качество">                  
+                        .principle__item-title качество
+                    .principle__info Именно эти «три кита» более 20 лет привлекают к нам солидных партнеров,  обеспечивают нам уважение и доверие покупателей. Нашим покупателям нравится наш стиль работы, наш имидж честных и надежных тружеников. Задача наших клиентов - купить кухню в Саратове. Заботы "Кухмастера" - решить задачу наших клиентов на самом высшем уровне!
 
-                        button(class="video-block__button" data-video-id="k0ZqNL56n_E")
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-play-btn-fill" viewBox="0 0 16 16"> <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/> </svg>
+        section.for-client.for-client__about
+            .container
+                .wrapper
+                    .for-client__text
+                        .title
+                            h2.title__section.title__section_indent-sm Мы мастера своего дела
+                        .for-client__description У нас вы получите любые разъяснения о производстве наших кухонь, совет о выборе цветовой гаммы и материала для фасада, проконсультируем вас даже о тонкостях кухонного ремонта. При этом, мы категорически не приемлем модную сегодня практику «навязчивого внимания» к покупателю. Мы мастера по изготовлению кухонной мебели на заказ и купить у нас ее может каждый.
+
+        section.difference.section
+            .container
+                .title
+                    h2.title__section Что отличает хорошую торговую компанию от всех остальных
+                .cards2
+                    .card2.card2__column
+                        .card2__content
+                            .card2__title Количество продаж
+                            .card2__text У нас каждый месяц есть не менее 50 заказов на изготовление кухонной мебели. И даже в тяжелые кризисные годы, ударившие по строительному бизнесу, продажи «Пензенской мебели» не падали более чем на 30%. Гибкая ценовая политика, грамотная организация работ и высокое качество продукции оставили с нами и партнеров, и покупателей.
+                        .card2__footer
+                            .card2__big-title 11000+
+                            .card2__text.text__center довольных клиентов 
+                    .card2.card2__column
+                        .card2__title Доброжелательность сотрудников
+                        .card2__text  – еще одна наша «изюминка». <br> В наших салонах вы всегда получите нужную консультацию, начиная от нюансов изготовления кухонной мебели и заканчивая советами по любым ремонтным работам.
+                        .card2__footer
+                            .card2__img
+                                img(src="./img/svg/people/employee.svg", alt="Доброжелательность сотрудников")
+                    .card2.card2__column
+                        .card2__title Дружный и надежный коллектив
+                        .card2__text Основной костяк коллектива работает более 15 лет, это опытные и квалифицированные специалисты своего дела,которые с удовольствием берутся за любой заказ.
+                        .card2__footer
+                            .card2__img
+                                img(src="./img/svg/people/worker.svg", alt="Дружный и надежный коллектив")        
+        section.for-client.important-point.for-client__about.section__icon-bottom.section__icon-bottom_pen-paper
+            .container
+                .wrapper
+                    .for-client__text
+                        .title
+                            h2.title__section.title__section_indent-sm Очень важный момент - стоимость кухни
+                        .for-client__description При выборе кухни вы ориентируетесь на возможности своего кошелька. Самые недорогие комплекты: корпус из ламинированного ДСП, фасады из МДФ. Если вам нужен более эффектный вариант – кухня с фасадами из массива дуба. При разнице цен качество остается одинаково высоким. Компания «Кухмастер» предельно честна с покупателями в отношении цены. Мы считаем недопустимым искусственное завышение цены с последующей обманчивостью скидок, и предлагаем покупателю абсолютно реальную цену - у нас действительно недорогие кухни. А вот дарить подарки мы любим!
+        section.for-client.important-point.for-client__about
+            .container
+                .wrapper
+                    .section__info-text
+                        .title
+                            h2.title__section.title__section_indent-sm Наша компания делает не только кухни
+                        .section__info-container_standart Кухни – наш любюимый и основной продукт. По просьбам заказчиков мы запустили производство и остальной корпусной мебели. Вы можете обустроить свой дом полностью красивой, надежной, модной корпусной мебелью в едином стиле.
+            
+
+        //- section
+        //-     .youtube_video
+        //-         .video-block__youtube
+        //-             .video-block__inner
+        //-                 picture
+        //-                     source(srcset="https://img.youtube.com/vi_webp/k0ZqNL56n_E/maxresdefault.webp" type="image/webp")
+        //-                     img(class="video-block__content" src="https://img.youtube.com/vi/k0ZqNL56n_E/maxresdefault.jpg" alt="")
+
+        //-                 button(class="video-block__button" data-video-id="k0ZqNL56n_E")
+        //-                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-play-btn-fill" viewBox="0 0 16 16"> <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/> </svg>
 
 
 
 
 
 
-        .cards3
-            .card3
-                .youtube_video
-                    .video-block__youtube
-                        .video-block__inner
-                            picture
-                                source(srcset="https://img.youtube.com/vi_webp/k0ZqNL56n_E/maxresdefault.webp" type="image/webp")
-                                img(class="video-block__content" src="https://img.youtube.com/vi/k0ZqNL56n_E/maxresdefault.jpg" alt="")
+        //- .cards3
+        //-     .card3
+        //-         .youtube_video
+        //-             .video-block__youtube
+        //-                 .video-block__inner
+        //-                     picture
+        //-                         source(srcset="https://img.youtube.com/vi_webp/k0ZqNL56n_E/maxresdefault.webp" type="image/webp")
+        //-                         img(class="video-block__content" src="https://img.youtube.com/vi/k0ZqNL56n_E/maxresdefault.jpg" alt="")
 
-                            button(class="video-block__button" data-video-id="k0ZqNL56n_E")
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-play-btn-fill" viewBox="0 0 16 16"> <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/> </svg>
+        //-                     button(class="video-block__button" data-video-id="k0ZqNL56n_E")
+        //-                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-play-btn-fill" viewBox="0 0 16 16"> <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/> </svg>
 
-            .card3
-                .vimeo_video
-                    .video-block
-                        .video-block__inner
-                            picture
-                                img(class="video-block__content" src="https://vumbnail.com/122228914.jpg" alt="")
+        //-     .card3
+        //-         .vimeo_video
+        //-             .video-block
+        //-                 .video-block__inner
+        //-                     picture
+        //-                         img(class="video-block__content" src="https://vumbnail.com/122228914.jpg" alt="")
 
-                            button(class="video-block__button" data-video-id="k0ZqNL56n_E")
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-play-btn-fill" viewBox="0 0 16 16"> <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/> </svg>
+        //-                     button(class="video-block__button" data-video-id="k0ZqNL56n_E")
+        //-                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-play-btn-fill" viewBox="0 0 16 16"> <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/> </svg>
 

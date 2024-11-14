@@ -24,6 +24,8 @@
 @import "components/youtube-video";
 @import "components/vimeo-video";
 
+@import "section";
+
 @import "section/hero";
 @import "section/for-you";
 @import "section/for-client";
@@ -32,9 +34,9 @@
 @import "section/choose-us";
 @import "section/reviews";
 @import "section/how-to-order";
-
+@import "section/principle";
+@import "section/difference";
 @import "section/cases";
-
+@import "section/important-point";
 @import "page/about";
-
 @import "footer";

@@ -1,0 +1,89 @@
+.principle{
+    background-color: $color9;
+    padding: 5rem 0;
+
+    &__wrapper{
+        position: relative;
+        height: 40rem;
+    }
+
+    .title{
+        padding-bottom: 7rem;
+    }
+
+    &__item{
+        position: absolute;
+        width: 23.8rem;
+        height: 16rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.3rem;
+
+        border: 0.5rem solid #FDD7D7;
+        background-color: #fff;
+
+        &-img{
+            height: 8rem;
+            img{
+                width: auto;
+            }
+        }
+
+        &-title{
+            font-size: 1.8rem;
+        }
+    }
+
+
+    &__one{
+        left: 0;
+        top: 20rem;
+    }
+
+    &__two{
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/page/about/principle/right-line.svg);
+            background-size: cover;
+            width: 46.45rem;
+            height: 11.75rem;
+            left: 23.8rem;
+            bottom: -4.5rem;
+            //transform: translateX(50%);
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../img/page/about/principle/left-line.svg);
+            background-size: cover;
+            width: 41.35rem;
+            height: 11.8rem;
+            right: 23.8rem;
+            bottom: -4.5rem;
+            //transform: translateX(-50%);
+        }
+    }
+
+    &__three{
+        right: 0;
+        top: 20rem;
+    }
+
+    &__info{
+        width: 64.5rem;
+        font-size: 1.8rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20rem;
+        letter-spacing: 0.05rem;
+    }
+}

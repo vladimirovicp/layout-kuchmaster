@@ -71,8 +71,16 @@
     }
   }
 
-  &__pagination{
-    display: none;
+  // &__pagination{
+  //   display: none;
+  // }
+
+  .swiper-pagination-bullet{
+
+    width: 3.6rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    background-color: $color1;
   }
 
 }
@@ -113,8 +121,12 @@
           transition: transform 0.3s ease-out .55s;
         }
       }
-
     }
+
+    .swiper-pagination {
+      position: absolute;
+      top: 4rem;
+    } 
   }
 }
 
@@ -138,15 +150,16 @@
       }
     }
 
-    &__pagination{
-      display: block;
-    }
+    // &__pagination{
+    //   display: block;
+    // }
+
 
     .swiper-pagination-bullet{
-      width: 3.6rem;
-      height: 3.6rem;
-      line-height: 3.6rem;
-      background-color: $color1;
+      // width: 3.6rem;
+      // height: 3.6rem;
+      // line-height: 3.6rem;
+      // background-color: $color1;
     }
 
     &__arrow-prev, &__arrow-next{

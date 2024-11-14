@@ -20,10 +20,24 @@
   border-radius: .4rem;
   background-color: $color3;
 
+  &.card2__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__v-centered{
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  &__wrapper-center{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8.5rem;
   }
 
   &__img{
@@ -68,6 +82,10 @@
     font-size: 1.8rem;
     color: $color2;
     margin-top: 2rem;
+  }
+
+  &__footer{
+    margin-top: auto;
   }
 }
 
@@ -135,6 +153,14 @@
 
     &__text{
       font-size: 3.2rem;
+    }
+
+    &__wrapper-center{
+      height: auto;
+      display: block;
+      padding: 2rem 0 0;
+      justify-content: unset;
+      align-items: unset;
     }
   }
 
