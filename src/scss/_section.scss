@@ -32,6 +32,13 @@
                 background-image: url(../img/svg/section/family.svg);
             }
         }  
+
+        &_family2 {
+            &::before {
+                height: 24.9rem;
+                background-image: url(../img/svg/section/family2.svg);
+            }
+        }
         
         &_pen-paper {
             &::before {
