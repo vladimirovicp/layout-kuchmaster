@@ -1,0 +1,36 @@
+.contacts{
+    &__info{
+        padding: 8rem 0;
+        &-row{
+            display: flex;
+            gap: 5rem;
+        }
+
+        &-cell{
+
+        }
+
+        &-img{
+            width: 64rem;
+            height: 48.3rem;
+        }
+
+    }
+}
+
+@media (max-width: 48em) {
+    .contacts{
+        &__info{
+            padding: 8rem 0;
+            &-row{
+                flex-direction: column;
+            }
+
+            &-img{
+                width: 64rem;
+                height: 48.3rem;
+            }
+
+        }
+    }
+}

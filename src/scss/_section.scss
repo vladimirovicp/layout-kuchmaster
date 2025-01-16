@@ -5,7 +5,7 @@
         }
 
         &-container_standart{
-            width: 83.5rem;
+             width: 83.5rem;
         }
     }
 
@@ -48,4 +48,15 @@
         }
                     
     }
+}
+
+@media (max-width: 48em) {
+.section{
+    &__info{
+            &-container_standart{
+           width: 100%;
+        }
+    }
+}
+
 }
